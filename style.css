@@ -28,10 +28,14 @@
 body {
     font-family: var(--ffTheme);
     font-weight: 400;
+	min-height: 100dvh;
+	max-width: 99dvw;
     font-size: var(--fsMain);
     line-height: 1.6;
     color: var(--clrMain100);
 	background: var(--clrMain900);
+	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -157,9 +161,9 @@ ul {
 #developer,
 #aboutMe,
 #contactMe {
-	max-width: 100dvw;
+	max-width: 99dvw;
 	min-height: 100dvh;
-	padding: 1rem;
+	padding: 1rem 2rem;
 	margin: 1rem;
 }
 
@@ -326,6 +330,7 @@ nav {
         gap: 1rem;
         background: var(--clrMain900);
         font-size: var(--fsNavBar);
+		padding: 0 1rem;
     }
     nav * {
         text-decoration: none;
@@ -427,6 +432,22 @@ nav {
 	position: relative;
 	text-align: center;
     z-index: 1;
+	display: grid;
+	place-items: center;
+}
+
+#home .imgContainer a {
+	border: 2px solid var(--clrMain100);
+	color: var(--clrMain100);
+	border-radius: .5rem;
+	padding: 0 .5rem;
+	
+}
+
+#home .imgContainer a:hover {
+	border: 2px solid var(--bgaccent);
+	color: var(--clrMain100);
+
 }
 
 #home:after,
@@ -465,7 +486,7 @@ nav {
 #website, 
 #Sitios {
 	min-height: 100dvh;
-	width: 100dvw;
+	max-width: 100dvw;
 	padding: 2rem 2rem;
 	background: var(--bgaccent);
 	color: var(--clrMain100);
@@ -665,7 +686,7 @@ nav {
 		background: var(--clrMain900);
 		color: var(--clrMain100);
 		min-height: 100dvh;
-		width: 100dvw;
+		max-width: 100dvw;
 		padding: 2rem;
         display: grid;
         place-items: center;
@@ -742,7 +763,7 @@ nav {
 		color: var(--clrMain100);
 		background: linear-gradient(45deg, var(--clrMain900), var(--clrThemeTeal), var(--clrThemeBlue));
 		min-height: 80dvh;
-		width: 100dvw;
+		max-width: 100dvw;
 		padding: .5rem 2rem;
 		display: grid;
 		text-align: center;
@@ -820,7 +841,7 @@ nav {
 
 #footer {
 	min-height: 20dvh;
-	width: 100dvw;
+	max-width: 100dvw;
 	padding: 2em 0 2em 0 ;
 	color: var(--clrMain100);
 	background-image: url("./images/miaminights2.jpg");
