@@ -412,14 +412,17 @@ nav .faFonts {
 	border-radius: .5rem;
 	border: 1px solid var(--clrMain100);
 	box-shadow: 0 0 15px var(--clrMain900);
+	object-fit: cover;
+	overflow: hidden;
 }
 
-.websiteCard a, .websiteCard ul, .websiteCard span {
-	text-decoration: none;
-	outline: none;
-	display: grid;
-	place-items: center;
+.seo img {
+	object-fit: cover;
+	place-content: center;
+	width: 100%;
+	scale: .5;
 }
+
 
 .websiteCard .button {
 	margin: 0 auto;
