@@ -17,6 +17,7 @@
 	--fsContentHeader: clamp(1.5rem, 5vw, 2rem);
     --fsNavBar: clamp(.5rem, 2vw, .65rem);
     --logoWidth: clamp(15rem, 5vw, 20rem);
+	--splitWidth: clamp(300px, 40vw, 700px);
 }
 
 *,
@@ -107,12 +108,17 @@ p {
 	gap: 2rem;
 	max-width: 95dvw;
 	margin: 0 auto;
+	padding: 1rem 2rem;
 }
 
 .splitLeft,
 .splitRight {
-	max-width: 700px;
+	width: var(--splitWidth);
 	margin: 1rem auto;
+}
+
+.splitRight p {
+	padding-top: 1rem;
 }
 
 .imgContainer {
@@ -213,7 +219,7 @@ nav {
 	object-fit: cover;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 870px) {
 	header {
 		display: grid;
 		place-items: center;
@@ -298,6 +304,24 @@ nav {
 	.hamburgerMenu ul li:hover {
 		background-color: var(--clrMain900);
 	}
+
+	.split {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		place-items: center;
+		gap: 2rem;
+		max-width: 95dvw
+		margin: 0 auto;
+	}
+
+	.splitLeft,
+	.splitRight {
+		width: var(--splitWidth);
+	}
+
+	.splitRight p {
+		padding-top: 1rem;
+	}
 	
 	#home,
 	#developer,
@@ -306,8 +330,8 @@ nav {
 		min-height: 100dvw;
 		max-width: 100dvw;
 		overflow-x: hidden;
-		margin: auto;
-		padding: 0 4rem;
+		margin: 0 auto;
+		padding: 1rem 2rem;
 	}
 
 	
@@ -327,7 +351,7 @@ nav {
 }
 
 
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 871px) {
 	header {
 		padding: 0;
 		margin-bottom: 2rem;
@@ -561,6 +585,7 @@ nav {
 #Sitios .portfolioGrid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
 	min-height: 250px;
 	place-items: center;
 }
@@ -676,6 +701,7 @@ nav {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 	place-items: center;
+	gap: 1rem;
 
 }
 
