@@ -289,7 +289,7 @@ nav .faFonts {
 	color: var(--clrMain100);
 
 }
-
+/* 
 #home:after,
 #change:after {
     content: "";
@@ -299,7 +299,7 @@ nav .faFonts {
     inset: 0;
     opacity: .25;
     z-index: -1;
-}
+} */
 
 #home .imgContainer img {
     border: 1px solid --clrMain900;
@@ -350,7 +350,7 @@ nav .faFonts {
 	position: relative;
 	z-index: 1;
 }
-
+/* 
 #website:before, 
 #Sitios:before {
 	content: "";
@@ -362,7 +362,7 @@ nav .faFonts {
 	z-index: -1;
 	background-size: cover;
 	object-fit: contain;
-}
+} */
 
 #website section, 
 #Sitios section {
@@ -470,7 +470,7 @@ nav .faFonts {
 	line-height: 1.3;
 	z-index: 1;
 }
-
+/* 
 #aboutMe:before,
 #Me:before {
     content: "";
@@ -480,7 +480,7 @@ nav .faFonts {
     inset: 0;
     opacity: .5;
 	z-index: -1;
-}
+} */
 
 #aboutMe .splitY {
 	display: flex;
@@ -547,7 +547,7 @@ nav .faFonts {
     position: relative;
     z-index: 1;
 }
-
+/* 
 #developer:after,
 #Desarrollador:after {
     content: "";
@@ -557,7 +557,7 @@ nav .faFonts {
     inset: 0;
     opacity: 1;
     z-index: -1;
-}
+} */
 
 .accordion {
     max-width: 800px;
@@ -624,7 +624,7 @@ nav .faFonts {
 	place-items: center;
 	position: relative;
 }
-
+/* 
 #contactMe::before,
 #Contacto::before {
 	content: "";
@@ -632,7 +632,7 @@ nav .faFonts {
 	background-image: url("/images/homePage.png");
 	background-size: cover;
 	opacity: .5;
-}
+} */
 
 .contactContainer {
 	display: flex;
