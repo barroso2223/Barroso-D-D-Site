@@ -322,6 +322,11 @@ nav {
 	.splitRight p {
 		padding-top: 1rem;
 	}
+
+	.splitY,
+	.splitBottom {
+		padding: 0 2rem;
+	}
 	
 	#home,
 	#developer,
@@ -332,6 +337,12 @@ nav {
 		overflow-x: hidden;
 		margin: 0 auto;
 		padding: 1rem 2rem;
+	}
+
+	#aboutMe .splitY {
+		width: text-align: center;
+		max-width: 99dvw;
+		padding: 0 2rem;;
 	}
 
 	
@@ -455,9 +466,13 @@ nav {
 		max-width: 100dvw;
 		overflow-x: hidden;
 		margin: auto;
-		padding: 0 4rem;
 	}
 
+	#aboutMe .aboutMeTop > p {
+		text-align: center;
+		width: clamp(300px, 40vw, 500px);
+		padding: 0 2rem;
+	}
 	
 	#contactMe {
 		min-height: 80dvw;
@@ -659,6 +674,7 @@ nav {
 	max-width: 100dvw;
 	display: grid;
     gap: 1rem;
+	text-align: center;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 	background: var(--bgaccent);
@@ -693,6 +709,12 @@ nav {
     place-items: center;
     margin-bottom: 2rem;
     clear: both;
+}
+
+#aboutMe .aboutMeTop > p {
+	text-align: center;
+	width: clamp(300px, 40vw, 500px);
+	padding: 0 2rem;
 }
 
 .splitBottom {
