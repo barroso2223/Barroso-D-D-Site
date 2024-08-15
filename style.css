@@ -638,6 +638,11 @@ nav .faFonts {
 	opacity: .5;
 } */
 
+#contactMe h2,
+#contactMe p {
+	padding-bottom: 1rem;
+}
+
 .contactContainer {
 	display: flex;
 	margin: 0 auto;
