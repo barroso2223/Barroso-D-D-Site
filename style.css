@@ -226,7 +226,6 @@ nav {
         max-width: 100dvw;
         min-height: 10dvh;
         gap: 1rem;
-        background: var(--clrMain900);
         font-size: var(--fsNavBar);
 	}
 
@@ -237,7 +236,6 @@ nav {
         width: 100dvw;
         min-height: 10dvh;
         gap: 1rem;
-        background: var(--clrMain900);
         font-size: var(--fsNavBar);
 		margin: auto;
     }
