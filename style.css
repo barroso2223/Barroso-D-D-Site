@@ -15,7 +15,7 @@
 	--fsSpecial: clamp(1rem, 3vw, 1.5rem);
 	--fsSectionHeader: clamp(2rem, 6vw, 2.5rem);
 	--fsContentHeader: clamp(1.5rem, 5vw, 2rem);
-    --fsNavBar: clamp(.5rem, 2vw, .75rem);
+    --fsNavBar: clamp(.5rem, 2vw, .65rem);
     --logoWidth: clamp(15rem, 5vw, 20rem);
 }
 
@@ -28,14 +28,13 @@
 body {
     font-family: var(--ffTheme);
     font-weight: 400;
-	min-height: 100dvh;
-	max-width: 99dvw;
     font-size: var(--fsMain);
     line-height: 1.6;
     color: var(--clrMain100);
 	background: var(--clrMain900);
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 a {
@@ -43,7 +42,6 @@ a {
     list-style: none;
 }
 
-body,
 h1,
 h2,
 h3,
@@ -58,7 +56,7 @@ p {
 }
 
 .spanishP {
-	font-size: var(--fsNavBar);
+	font-size: var(--fsMain);
 }
 
 h1,
@@ -106,22 +104,15 @@ p {
 .split {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 3rem;
-	max-width: 100dvw;
-	min-height: 70dvh;
-	padding: 0 2rem;
+	gap: 2rem;
+	max-width: 95dvw;
 	margin: 0 auto;
 }
 
 .splitLeft,
 .splitRight {
 	max-width: 700px;
-	padding: 0 2rem;
-	margin: 0 auto;
-}
-
-.splitRight {
-	margin-left: 2rem;
+	margin: 1rem auto;
 }
 
 .imgContainer {
@@ -160,11 +151,14 @@ ul {
 #home,
 #developer,
 #aboutMe,
-#contactMe {
-	max-width: 99dvw;
+#contactMe,
+#website {
+	max-width: 100dvw;
 	min-height: 100dvh;
-	padding: 1rem 2rem;
-	margin: 1rem;
+	padding: 1rem 4rem;
+	margin: auto;
+	margin-right: 4rem;
+	overflow-x: hidden;
 }
 
 .button,
@@ -188,7 +182,6 @@ button:hover {
 /* header nav */
 
 header { 
-    background: var(--clrMain900);
     color: var(--clrMain100); 
     max-width: 100dvw;
     min-height: 10dvh;
@@ -202,7 +195,7 @@ nav {
     font-size: var(--fsNavBar);
     align-items: center;
     justify-content: space-between;
-    background:var(--clrMain900); 
+	padding-right: 3rem;
 }
 
 
@@ -222,9 +215,8 @@ nav {
 
 @media screen and (max-width: 850px) {
 	header {
-		display: flex;
-        justify-content: center;
-        align-items: center;
+		display: grid;
+		place-items: center;
         max-width: 100dvw;
         min-height: 10dvh;
         gap: 1rem;
@@ -241,6 +233,7 @@ nav {
         gap: 1rem;
         background: var(--clrMain900);
         font-size: var(--fsNavBar);
+		margin: auto;
     }
     nav * {
         text-decoration: none;
@@ -305,6 +298,31 @@ nav {
 	.hamburgerMenu ul li:hover {
 		background-color: var(--clrMain900);
 	}
+	
+	#home,
+	#developer,
+	#aboutMe,
+	#website {
+		min-height: 100dvw;
+		max-width: 100dvw;
+		overflow-x: hidden;
+		margin: auto;
+		padding: 0 4rem;
+	}
+
+	
+	#contactMe {
+		min-height: 80dvw;
+		max-width: 100dvw;
+		overflow-x: hidden;
+		margin: auto;
+	}
+
+	#home h1,
+	#home p {
+		width: clamp(300px, 40vw, 700px);
+		margin: auto;
+	}
     
 }
 
@@ -317,7 +335,6 @@ nav {
         justify-content: center;
         max-width: 100dvw;
         min-height: 10dvh;
-        background: var(--clrMain900);
         font-size: var(--fsNavBar);
 	}
 
@@ -325,12 +342,10 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100dvw;
+        width: 90dvw;
         min-height: 20dvh;
         gap: 1rem;
-        background: var(--clrMain900);
         font-size: var(--fsNavBar);
-		padding: 0 1rem;
     }
     nav * {
         text-decoration: none;
@@ -344,11 +359,31 @@ nav {
 		padding: 0 1rem;
 	}
 
-	#navBar ul li {
+	nav ul { 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+        display: flex; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        text-decoration: none;
+        font-size: var(--fsNavBar);
+        height: 12dvh;
+        max-width: 90dvw;
+        margin: auto;
+    } 
+
+	nav ul li { 
+        margin: 0 10px; 
+        margin-top: .75rem;
+        text-decoration: none;
+        color: var(--clrMain100);
 		font-size: var(--fsNavBar);
+        display: flex;
+        justify-content: center;
 		border: 1px solid var(--clrMain100);
 		border-radius: .5rem;
-		width: 5rem;
+		width: 4rem;
 		height: fit-content;
 	}
 	
@@ -382,30 +417,6 @@ nav {
 		margin: -1rem;
     }
     
-    nav ul { 
-        list-style: none; 
-        padding: 0; 
-        margin: 0; 
-        display: flex; 
-        justify-content: space-between; 
-        flex-wrap: wrap; 
-        text-decoration: none;
-        font-size: var(--fsNavBar);
-        height: 12dvh;
-        max-width: 100dvw;
-        margin: auto;
-    } 
-    
-    nav ul li { 
-        margin: 0 10px; 
-        margin-top: .75rem;
-        text-decoration: none;
-        color: var(--clrMain100);
-		font-size: var(--fsNavBar);
-        display: flex;
-        justify-content: space-around;
-    } 
-    
     nav .faFonts {
         padding-left: 1rem;
         padding-top: .75rem;
@@ -415,8 +426,26 @@ nav {
 	#home,
 	#developer,
 	#aboutMe,
-	#contactMe {
+	#website {
 		min-height: 100dvw;
+		max-width: 100dvw;
+		overflow-x: hidden;
+		margin: auto;
+		padding: 0 4rem;
+	}
+
+	
+	#contactMe {
+		min-height: 80dvw;
+		max-width: 100dvw;
+		overflow-x: hidden;
+		margin: auto;
+	}
+
+	#home h1,
+	#home p {
+		width: clamp(300px, 40vw, 700px);
+		margin: auto;
 	}
 
 }
@@ -426,7 +455,7 @@ nav {
 #home, 
 #change {
 	min-height: 85dvh;
-	width: 100dvw;
+	max-width: 100dvw;
 	color: var(--clrMain100);
 	background: var(--clrMain900);
 	position: relative;
@@ -487,7 +516,6 @@ nav {
 #Sitios {
 	min-height: 100dvh;
 	max-width: 100dvw;
-	padding: 2rem 2rem;
 	background: var(--bgaccent);
 	color: var(--clrMain100);
 	background-size: cover;
@@ -509,8 +537,8 @@ nav {
 	object-fit: contain;
 }
 
-#website header, 
-#Sitios header {
+#website section, 
+#Sitios section {
 	margin: auto;
 }
 
@@ -602,7 +630,6 @@ nav {
 
 #aboutMe,
 #Me {
-	padding: 2rem 2rem;
 	min-height: 100dvh;
 	max-width: 100dvw;
 	display: grid;
@@ -672,177 +699,150 @@ nav {
 	font-size: .5em;
 }
 
-
 	
-/* Main */
+#developer,
+#Desarrollador {
+	background: var(--clrMain900);
+	color: var(--clrMain100);
+	min-height: 100dvh;
+	max-width: 100dvw;
+	padding: 2rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+}
 
-	.main {
-		padding: 2em 0 4em 0 ;
-		color: white;
-	}
-	
-	#developer,
-	#Desarrollador {
-		background: var(--clrMain900);
-		color: var(--clrMain100);
-		min-height: 100dvh;
-		max-width: 100dvw;
-		padding: 2rem;
-        display: grid;
-        place-items: center;
-        position: relative;
-        z-index: 1;
-    }
-    
-    #developer:after,
-    #Desarrollador:after {
-        content: "";
-        position: absolute;
-        background: url("images/15.png");
-        background-size: cover;
-        inset: 0;
-        opacity: 1;
-        z-index: -1;
-    }
+#developer:after,
+#Desarrollador:after {
+    content: "";
+    position: absolute;
+    background: url("images/15.png");
+    background-size: cover;
+    inset: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.accordion {
+    max-width: 800px;
+    box-shadow: 0 0 15px var(--clrMain100);
+    border-radius: .5rem;
+    overflow: hidden;
+    background: var(--clrMain900);
+}
+.accordionLabel,
+.accordionContent {
+    padding: 14px 20px;
+}
+.accordionLabel {
+    display: block;
+    color: var(--clrMain100);
+    cursor: pointer;
+	border-bottom: 1px solid var(--bgaccent);
+    position: relative;
+}
+.accordionLabel:hover {
+    background: rgba(0,0,0,.1);
+}
+.accordionLabel:after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-33%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    transition: transform .4s;
+}
+.accordionContent {
+    background: var(--bgaccent);
+    line-height: 1.6;
+    font-size: .85em;
+    display: none;
+}
+.accordionInput {
+    display: none;
+}
+.accordionInput:checked ~ .accordionContent {
+    display: block;
+}
+#contactMe, 
+#Contacto {
+	color: var(--clrMain100);
+	background: linear-gradient(45deg, var(--clrMain900), var(--clrThemeTeal), var(--clrThemeBlue));
+	min-height: 80dvh;
+	max-width: 100dvw;
+	padding: .5rem 2rem;
+	display: grid;
+	text-align: center;
+	place-items: center;
+	position: relative;
+}
+#contactMe::before,
+#Contacto::before {
+	content: "";
+	position: absolute;
+	background-image: url("/images/homePage.png");
+	background-size: cover;
+	opacity: .5;
+}
+.contactContainer {
+	display: flex;
+	margin: 0 auto;
+	place-items: center;
+}
+.contactContainer .fa {
+	display: flex;
+	flex-direction: column;
+}
+.fa {
+	color: var(--clrMain100);
+	font-size: 1.5rem;
+	margin: 1rem;
+	place-content: center;
+	text-align: center;
+}
+.contactLinks {
+	display: grid;	
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	place-items: center;
+}
 
-	.accordion {
-        max-width: 800px;
-        box-shadow: 0 0 15px var(--clrMain100);
-        border-radius: .5rem;
-        overflow: hidden;
-        background: var(--clrMain900);
-    }
+.contactGrid {
+	width: 300px;
+	display: flex;
+	padding-right: .5rem;
+	margin-right: 3rem;
+}
+.contactGrid .buttons {
+	width: fit-content;
+	margin: .5rem .5rem;
+	height: fit-content;
+	gap: .5rem;
+}
+.contactGrid li {
+	display: flex;
+	flex-direction: column;
+	margin: 0 1rem;
+}
+.calendar {
+	width: clamp(300px, 40dvw, 600px);
+	max-height: 500px;
+	background: var(--clrMain100);
+	border: 2px solid var(--clrMain900);
+	border-radius: .5rem;
+	margin: 1rem 2rem;
+	place-items: center;
+}
 
-    .accordionLabel,
-    .accordionContent {
-        padding: 14px 20px;
-    }
-
-    .accordionLabel {
-        display: block;
-        color: var(--clrMain100);
-        cursor: pointer;
-		border-bottom: 1px solid var(--bgaccent);
-        position: relative;
-
-    }
-
-    .accordionLabel:hover {
-        background: rgba(0,0,0,.1);
-    }
-
-    .accordionLabel:after {
-        content: "+";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-33%);
-        right: 20px;
-        width: 12px;
-        height: 6px;
-        transition: transform .4s;
-    }
-
-    .accordionContent {
-        background: var(--bgaccent);
-        line-height: 1.6;
-        font-size: .85em;
-        display: none;
-    }
-
-    .accordionInput {
-        display: none;
-    }
-
-    .accordionInput:checked ~ .accordionContent {
-        display: block;
-    }
-
-
-	#contactMe, 
-	#Contacto {
-		color: var(--clrMain100);
-		background: linear-gradient(45deg, var(--clrMain900), var(--clrThemeTeal), var(--clrThemeBlue));
-		min-height: 80dvh;
-		max-width: 100dvw;
-		padding: .5rem 2rem;
-		display: grid;
-		text-align: center;
-		place-items: center;
-		position: relative;
-	}
-	#contactMe::before,
-	#Contacto::before {
-		content: "";
-		position: absolute;
-		background-image: url("/images/homePage.png");
-		background-size: cover;
-		opacity: .5;
-	}
-
-	.contactContainer {
-		display: flex;
-		margin: 0 auto;
-		place-items: center;
-	}
-
-	.contactContainer .fa {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.fa {
-		color: var(--clrMain100);
-		font-size: 1.5rem;
-		margin: 1rem;
-		place-content: center;
-		text-align: center;
-	}
-
-	.contactLinks {
-		display: grid;	
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		place-items: center;
-	}
-	
-	.contactGrid {
-		width: 300px;
-		display: flex;
-		padding-right: .5rem;
-		margin-right: 3rem;
-	}
-
-	.contactGrid .buttons {
-		width: fit-content;
-		margin: .5rem .5rem;
-		height: fit-content;
-		gap: .5rem;
-	}
-
-	.contactGrid li {
-		display: flex;
-		flex-direction: column;
-		margin: 0 1rem;
-	}
-
-	.calendar {
-		width: clamp(300px, 40dvw, 600px);
-		max-height: 500px;
-		background: var(--clrMain100);
-		border: 2px solid var(--clrMain900);
-		border-radius: .5rem;
-		margin: 1rem 2rem;
-		place-items: center;
-	}
-
-	.calendar a {
-		color: var(--clrThemeTeal);
-	}
-
+.calendar a {
+	color: var(--clrThemeTeal);
+}
 
 #footer {
 	min-height: 20dvh;
 	max-width: 100dvw;
-	padding: 2em 0 2em 0 ;
+	padding: .5rem 2rem;
 	color: var(--clrMain100);
 	background-image: url("./images/miaminights2.jpg");
 	overflow: hidden;
