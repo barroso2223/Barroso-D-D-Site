@@ -221,7 +221,7 @@ nav ul li {
 	justify-content: center;
 	border: 1px solid var(--clrMain100);
 	border-radius: .5rem;
-	width: 4rem;
+	width: 2.5rem;
 	height: fit-content;
 }
 
