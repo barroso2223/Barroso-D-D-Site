@@ -559,6 +559,10 @@ nav .faFonts {
     z-index: -1;
 } */
 
+#developer h2 {
+	padding-bottom: 1rem;
+}
+
 .accordion {
     max-width: 800px;
     box-shadow: 0 0 15px var(--clrMain100);
