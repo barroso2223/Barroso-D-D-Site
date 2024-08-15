@@ -728,7 +728,7 @@ nav .faFonts {
 	* {
 		text-align: center;
 	}
-	
+
 	#home {
 		display: grid;
 		place-items: center;
@@ -818,7 +818,7 @@ nav .faFonts {
 		display: grid;
 		place-items: center;
 		max-width: 90dvw;
-		padding-right: 3rem;
+		padding-right: 2rem;
 		margin: auto;
 	}
     
