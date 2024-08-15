@@ -147,6 +147,19 @@ ul {
 	overflow-x: hidden;
 }
 
+#developer,
+#aboutMe,
+#gallery,
+#contactMe,
+#website {
+	max-width: 100dvw;
+	min-height: 100dvh;
+	padding: 1rem 4rem;
+	margin: 0 auto;
+	overflow-x: hidden;
+	padding-top: 2rem;
+}
+
 .button,
 button {
 	width: 12rem;
@@ -395,10 +408,10 @@ nav .faFonts {
 
 .websiteCard {
 	border: 2px solid var(--clrMain100);
-	width: 300px;
-	height: 200px;
+	min-width: 300px;
+	height: 250px;
 	border-radius: .5rem;
-	background: var(--bgaccent);
+	background: var(--gaccent);
 	color: var(--clrMain100);
 	padding: .5rem;
 	margin: 1rem auto;
@@ -458,6 +471,40 @@ nav .faFonts {
 	margin: auto;
 }
 
+#gallery {
+	background: var(--clrMain900);
+	margin: 0 auto;
+	display: grid;
+	place-items: center;
+}
+
+.galleryGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	place-items: center;
+	gap: 2rem;
+	padding-bottom: 1rem;
+}
+
+#gallery h2 {
+	padding: 2rem;
+	text-align: center;
+}
+
+.galleryGrid .galleryCard {
+	min-width: 300px;
+	border: 2px solid var(--clrMain100);
+	color: var(--clrMain100);
+	border-radius: .5rem;
+	box-shadow: 0 0 15px var(--clrMain100);
+	margin-right: 1rem;
+}
+
+.galleryCard img {
+	width: 100%;
+	height: 100%;
+}
+
 #aboutMe,
 #Me {
 	min-height: 100dvh;
@@ -467,7 +514,7 @@ nav .faFonts {
 	text-align: center;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-	background: var(--bgaccent);
+	background: var(--clrMain900);
 	color: var(--clrMain100);
     position: relative;
 	line-height: 1.3;
@@ -522,9 +569,9 @@ nav .faFonts {
 	height: fit-content;
 	border: 3px solid var(--clrMain100);
 	border-radius: .5rem;
-	box-shadow: 0 0 15px var(--clrMain900);
+	box-shadow: 0 0 15px var(--clrMain100);
 	display: grid;
-	background: var(--bgaccent);
+	background: linear-gradient(120deg, var(--clrMain900), var(--clrThemeBlue), var(--clrThemeTeal), var(--clrMain900));
 	gap: 1rem;
 	margin: 1rem;
 	padding: 1rem;
@@ -540,7 +587,7 @@ nav .faFonts {
 	
 #developer,
 #Desarrollador {
-	background: var(--clrMain900);
+	background: var(--bgaccent);
 	color: var(--clrMain100);
 	min-height: 100dvh;
 	max-width: 100dvw;
