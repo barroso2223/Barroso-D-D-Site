@@ -725,6 +725,10 @@ nav .faFonts {
 /* @media */
 
 @media screen and (max-width: 850px) {
+	* {
+		text-align: center;
+	}
+	
 	#home {
 		display: grid;
 		place-items: center;
