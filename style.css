@@ -352,6 +352,10 @@ nav .faFonts {
 	gap: 1rem;
 }
 
+.splitLeft img {
+	margin-bottom: .75rem;
+}
+
 .buttonList {
 	max-width: 500px;
 	margin: 1rem auto;
