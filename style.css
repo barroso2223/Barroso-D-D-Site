@@ -419,6 +419,7 @@ nav .faFonts {
 	display: grid;
 	place-items: center;
 	margin-bottom: 1rem;
+	padding-right: 2rem;
 	box-shadow: 0 0 15px var(--clrMain900);
 }
 
