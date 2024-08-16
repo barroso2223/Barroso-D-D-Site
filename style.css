@@ -499,7 +499,7 @@ nav .faFonts {
 }
 
 .galleryGrid .galleryCard {
-	min-width: 300px;
+	min-width: 275px;
 	border: 2px solid var(--clrMain100);
 	color: var(--clrMain100);
 	border-radius: .5rem;
