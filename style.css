@@ -483,6 +483,7 @@ nav .faFonts {
 	margin: 0 auto;
 	display: grid;
 	place-items: center;
+	place-content: center;
 }
 
 .galleryGrid {
@@ -491,7 +492,6 @@ nav .faFonts {
 	place-items: center;
 	gap: 2rem;
 	padding-bottom: 1rem;
-	padding-right: 2rem;
 }
 
 #gallery h2 {
@@ -507,7 +507,6 @@ nav .faFonts {
 	box-shadow: 0 0 15px var(--clrMain100);
 	margin-right: 1rem;
 	display: grid;
-	margin-right: 2rem;
 	place-items: center;
 	overflow: hidden;
 }
