@@ -360,6 +360,9 @@ nav .faFonts {
 	background: var(--bgaccent);
 	color: var(--clrMain100);
 	background-size: cover;
+	display: grid;
+	place-content: center;
+	place-items: center;
 	object-fit: contain;
 	position: relative;
 	z-index: 1;
