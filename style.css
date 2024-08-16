@@ -410,7 +410,7 @@ nav .faFonts {
 .websiteCard {
 	border: 2px solid var(--clrMain100);
 	min-width: 300px;
-	height: 250px;
+	height: fit-content;
 	border-radius: .5rem;
 	background: var(--gaccent);
 	color: var(--clrMain100);
@@ -430,11 +430,16 @@ nav .faFonts {
 	overflow: hidden;
 }
 
-.seo img {
+.websiteCard p {
+	font-size: var(--fsNavBar);
+	padding-top: .5rem;
+}
+
+.seo {
 	object-fit: cover;
 	place-content: center;
 	width: 100%;
-	scale: .5;
+	height: 200px;
 }
 
 
