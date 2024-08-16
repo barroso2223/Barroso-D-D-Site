@@ -527,7 +527,7 @@ nav .faFonts {
 
 .galleryGrid .galleryCard {
 	border: 2px solid var(--clrMain100);
-	width: minmax(300px, 95vw);
+	width: minmax(300px, 90dvw);
 	height: fit-content;
 	border-radius: .5rem;
 	margin: 1rem auto;
