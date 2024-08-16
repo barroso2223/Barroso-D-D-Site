@@ -506,6 +506,7 @@ nav .faFonts {
 	box-shadow: 0 0 15px var(--clrMain100);
 	margin-right: 1rem;
 	display: grid;
+	margin-right: 2rem;
 	place-items: center;
 	overflow: hidden;
 }
