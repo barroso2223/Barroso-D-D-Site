@@ -491,7 +491,7 @@ nav .faFonts {
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	place-items: center;
 	gap: 2rem;
-	padding-bottom: 1rem;
+	padding: 1rem 2rem;
 }
 
 #gallery h2 {
