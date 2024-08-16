@@ -517,7 +517,8 @@ nav .faFonts {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	place-items: center;
-	gap: 2rem;
+	padding: 0 2rem;
+	gap: 1rem;
 }
 
 #gallery h2 {
@@ -530,24 +531,11 @@ nav .faFonts {
 	min-width: 300px;
 	height: fit-content;
 	border-radius: .5rem;
-	background: var(--gaccent);
-	color: var(--clrMain100);
-	padding: .5rem;
 	margin: 1rem auto;
 	display: grid;
 	place-items: center;
 	margin-bottom: 1rem;
-	box-shadow: 0 0 15px var(--clrMain900);
-	/* min-width: 275px;
-	max-width: 500px;
-	border: 2px solid var(--clrMain100);
-	color: var(--clrMain100);
-	border-radius: .5rem;
 	box-shadow: 0 0 15px var(--clrMain100);
-	margin-right: 1rem;
-	display: grid;
-	place-items: center;
-	overflow: hidden; */
 }
 
 .galleryCard img {
