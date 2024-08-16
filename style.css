@@ -98,6 +98,10 @@ p {
 	color: var(--clrMain100);
 }
 
+.fa:hover {
+	color: var(--clrThemeTeal);
+}
+
 .title {
 	display: grid;
 	place-items: center;
@@ -114,7 +118,11 @@ p {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-	color: inherit;
+	color: var(--clrMain100);
+}
+
+#nextPageIcons a:hover {
+	color: var(--clrThemeTeal);
 }
 
 img {
@@ -137,10 +145,10 @@ ul {
 }
 
 #home,
-#developer,
-#aboutMe,
+#faq,
+#packages,
 #contactMe,
-#website {
+#about {
 	max-width: 100dvw;
 	min-height: 100dvh;
 	padding: 1rem 4rem;
@@ -148,16 +156,11 @@ ul {
 	overflow-x: hidden;
 }
 
-#developer,
-#aboutMe,
+#faq,
+#packages,
 #gallery,
 #contactMe,
-#website {
-	max-width: 100dvw;
-	min-height: 100dvh;
-	padding: 1rem 4rem;
-	margin: 0 auto;
-	overflow-x: hidden;
+#about {
 	padding-top: 2rem;
 }
 
@@ -175,7 +178,7 @@ button {
 
 .button:hover,
 button:hover {
-	background: var(--clrMain100);
+	background: var(--ombreTheme);
 	color: var(--clrMain900);
 }
 
@@ -233,15 +236,23 @@ nav ul li {
 	font-size: var(--fsNavBar);
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 	border: 1px solid var(--clrMain100);
 	border-radius: .5rem;
 	width: 3.75rem;
 	height: fit-content;
+	padding: 0 .5rem;
+}
+
+#navBar ul li,
+#navBar ul a {
+	background: var(--ombreTheme);
+	width: fit-content;
 }
 
 #navBar ul li:hover,
 #navBar ul a:hover {
-	background: var(--clrThemeBlue);
+	background: var(--bgaccent);
 }
 
 .desktop {
@@ -292,6 +303,7 @@ nav .faFonts {
 
 #home .imgContainer a {
 	border: 2px solid var(--clrMain100);
+	background: var(--ombreTheme);
 	color: var(--clrMain100);
 	border-radius: .5rem;
 	padding: 0 .5rem;
@@ -299,7 +311,7 @@ nav .faFonts {
 }
 
 #home .imgContainer a:hover {
-	border: 2px solid var(--bgaccent);
+	background: var(--bgaccent);
 	color: var(--clrMain100);
 
 }
@@ -349,11 +361,15 @@ nav .faFonts {
 	gap: 1rem;
 }
 
+.themeButton {
+	background: var(--ombreTheme);
+}
+
 .buttonList a {
 	padding: 0 .5rem;
 }
 	
-#website, 
+#about, 
 #Sitios {
 	min-height: 100dvh;
 	max-width: 100dvw;
@@ -368,7 +384,7 @@ nav .faFonts {
 	z-index: 1;
 }
 /* 
-#website:before, 
+#about:before, 
 #Sitios:before {
 	content: "";
 	position: absolute;
@@ -381,19 +397,19 @@ nav .faFonts {
 	object-fit: contain;
 } */
 
-#website section, 
+#about section, 
 #Sitios section {
 	margin: auto;
 }
 
-#website .container, 
+#about .container, 
 #Sitios .container {
 	display: flex;
 	flex-direction: column;
 	gap: .5rem;
 }
 
-#website p, 
+#about p, 
 #Sitios p {
 	text-align: center;
 	color: var(--clrMain100);
@@ -401,7 +417,7 @@ nav .faFonts {
 	max-width: 900px;
 }
 
-#website .portfolioGrid, 
+#about .portfolioGrid, 
 #Sitios .portfolioGrid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -410,7 +426,7 @@ nav .faFonts {
 	place-items: center;
 }
 
-.websiteCard {
+.about {
 	border: 2px solid var(--clrMain100);
 	min-width: 300px;
 	height: fit-content;
@@ -426,7 +442,7 @@ nav .faFonts {
 	box-shadow: 0 0 15px var(--clrMain900);
 }
 
-.websiteCard img {
+.aboutCard img {
 	border-radius: .5rem;
 	border: 1px solid var(--clrMain100);
 	box-shadow: 0 0 15px var(--clrMain900);
@@ -434,7 +450,7 @@ nav .faFonts {
 	overflow: hidden;
 }
 
-.websiteCard p {
+.aboutCard p {
 	font-size: var(--fsNavBar);
 	padding-top: .5rem;
 }
@@ -447,7 +463,7 @@ nav .faFonts {
 }
 
 
-.websiteCard .button {
+.aboutCard .button {
 	margin: 0 auto;
 	border: 2px solid var(--clrMain100);
 	background: var(--clrMain100);
@@ -456,14 +472,14 @@ nav .faFonts {
 	padding-top: -2rem;
 }
 
-.websiteCard .button:hover {
+.aboutCard .button:hover {
 	margin: 0 auto;
 	border: 2px solid var(--clrMain100);
 	background: var(--clrMain900);
 	color: var(--clrMain100);
 }
 
-.websiteCard h3 {
+.aboutCard h3 {
 	text-align: center;
 	font-size: .85rem;
 	color: var(--clrMain100);
@@ -472,7 +488,7 @@ nav .faFonts {
 	place-items: center;
 }
 
-#website .arrowClass a, #Sitios .arrowClass a {
+#about .arrowClass a, #Sitios .arrowClass a {
 	text-decoration: none;
 	height: 3dvh;
 }
@@ -487,6 +503,7 @@ nav .faFonts {
 	display: grid;
 	place-items: center;
 	place-content: center;
+	padding: 1rem 2rem;
 }
 
 .galleryGrid {
@@ -494,7 +511,6 @@ nav .faFonts {
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	place-items: center;
 	gap: 2rem;
-	padding: 1rem 2rem;
 }
 
 #gallery h2 {
@@ -520,7 +536,7 @@ nav .faFonts {
 	object-fit: cover;
 }
 
-#aboutMe,
+#packages,
 #Me {
 	min-height: 100dvh;
 	max-width: 100dvw;
@@ -536,7 +552,7 @@ nav .faFonts {
 	z-index: 1;
 }
 /* 
-#aboutMe:before,
+#packages:before,
 #Me:before {
     content: "";
     position: absolute;
@@ -547,14 +563,14 @@ nav .faFonts {
 	z-index: -1;
 } */
 
-#aboutMe .splitY {
+#packages .splitY {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 }
 
-#aboutMe .aboutMeTop, 
-#Me .aboutMeTop {
+#packages .packagesTop, 
+#Me .packagesTop {
     max-width: 100dvw;
     min-height: 30dvh;
 	display: grid;
@@ -563,7 +579,7 @@ nav .faFonts {
     clear: both;
 }
 
-#aboutMe .aboutMeTop > p {
+#packages .packagesTop > p {
 	text-align: center;
 	width: clamp(300px, 40vw, 500px);
 	padding: 0 2rem;
@@ -603,7 +619,7 @@ nav .faFonts {
 }
 
 	
-#developer,
+#faq,
 #Desarrollador {
 	background: var(--bgaccent);
 	color: var(--clrMain100);
@@ -616,7 +632,7 @@ nav .faFonts {
     z-index: 1;
 }
 /* 
-#developer:after,
+#faq:after,
 #Desarrollador:after {
     content: "";
     position: absolute;
@@ -627,7 +643,7 @@ nav .faFonts {
     z-index: -1;
 } */
 
-#developer h2 {
+#faq h2 {
 	padding-bottom: 1rem;
 }
 
@@ -774,29 +790,17 @@ nav .faFonts {
 	min-height: 20dvh;
 	max-width: 100dvw;
 	padding: .5rem 2rem;
+	background: var(--clrMain900);
 	color: var(--clrMain100);
-	background-image: url("./images/miaminights2.jpg");
-	overflow: hidden;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
 	text-align: center;
 	margin-bottom: 1rem;
 	z-index: 1000;
 }
 
-#footer:before {
-	content: "";
-	position: absolute;
-	background: var(--clrMain900);
-	opacity: .7;
-	z-index: -1;
-}
-
 #footer a {
 	list-style: none;
 	text-decoration: none;
-	color: var(--clrMain100);
+	color: var(--clrThemeTeal);
 	margin: 0 1rem;
 }
 
