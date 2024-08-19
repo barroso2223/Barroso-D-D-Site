@@ -185,7 +185,7 @@ button:hover {
 /* header nav */
 header {
 	padding: 0;
-	margin-bottom: 2rem;
+	margin-bottom: .5rem;
 	display: flex;
 	justify-content: center;
 	max-width: 100dvw;
@@ -750,6 +750,10 @@ nav .faFonts {
     display: block;
 }
 
+#faq ul {
+	padding-top: 1rem;
+}
+
 #contactMe, 
 #Contacto {
 	color: var(--clrMain100);
@@ -757,7 +761,7 @@ nav .faFonts {
 	min-height: 80dvh;
 	max-width: 100dvw;
 	padding: .5rem 2rem;
-	margin: auto;
+	margin: 0 auto;
 	overflow: hidden;
 	display: grid;
 	text-align: center;
