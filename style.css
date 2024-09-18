@@ -4,6 +4,7 @@
 	--clrThemeBlue: rgb(84, 119, 223);
 	--clrThemeTeal: rgb(17, 221, 204);
 	--clrMain100: white;
+	--clrMain300: rgb(165, 163, 163);
 	--clrMain900: black;
     --bgaccent: rgb(87, 83, 83);
 	--ombreTheme: linear-gradient(45deg, var(--clrMain900), var(--clrThemeTeal), var(--clrThemeBlue));
@@ -14,10 +15,12 @@
 
 	--fsMain: clamp(.75rem, 3vw, 1rem);
 	--fsSpecial: clamp(1rem, 3vw, 1.5rem);
-	--fsSectionHeader: clamp(2rem, 6vw, 2.5rem);
-	--fsContentHeader: clamp(1.5rem, 5vw, 2rem);
+	--fsSectionHeader: clamp(2rem, 6vw, 3rem);
+	--fsContentHeader: clamp(1.5rem, 5vw, 2.5rem);
+	--fsContentHeaderMed: clamp(1.5rem, 4.5vw, 2rem);
     --fsNavBar: clamp(.5rem, 2vw, .65rem);
     --logoWidth: clamp(15rem, 5vw, 20rem);
+	--packageLogo: clamp(10rem, 4vw, 15rem);
 	--splitWidth: clamp(300px, 40vw, 700px);
 }
 
@@ -62,26 +65,35 @@ p {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--ffTheme);
     font-weight: 800;
     line-height: 1.2;
-}
-
-h1,
-h2 {
-    font-size: var(--fsSectionHeader);
+    font-size: var(--fsContentHeader);
 }
 
 h3 {
-    font-size: var(--fsContentHeader);
+	font-size: var(--fsContentHeaderMed);
 }
 
 p, 
 span {
     font-family: var(--ffAccent);
     font-size: var(--fsMain);
+}
+
+#starterHome {
+	position: relative;
+}
+
+#starterHome header {
+	display: grid;
+	place-items: start;
+	position: fixed;
+	inset: 0;
+	background: var(--clrMain900);
+	box-shadow: 0 0 5px var(--clrMain100);
+	height: 15dvh;
 }
 
 header nav ul li {
@@ -145,6 +157,8 @@ ul {
 }
 
 #home,
+#gallery,
+#testimonial,
 #faq,
 #packages,
 #contactMe,
@@ -195,7 +209,7 @@ header {
 
 #about,
 h2,
-#gallery img,
+#gallery,
 #faq,
 #packages,
 #contactMe,
@@ -207,8 +221,8 @@ h2,
 
 @keyframes scrollReveal {
 	from {
-		opacity: 0;
-		transform: translateY(100px);
+		opacity: .3;
+		transform: translateY(25px);
 	}
 	to {
 		opacity: 1;
@@ -279,7 +293,7 @@ nav ul li {
 	overflow: hidden;
 	border: 1px solid var(--clrMain100);
 	border-radius: .5rem;
-	width: 3.75rem;
+	width: fit-content;
 	height: fit-content;
 	padding: 0 .5rem;
 }
@@ -320,10 +334,23 @@ nav ul li {
 	margin: -1rem;
 }
 
+
+.packageLogo {
+	width: var(--packageLogo);
+	margin-top: .75rem;
+	padding-bottom: 3rem;
+	margin: auto;
+}
+
+.packageLogo img {
+	width: 90%;
+}
+
 nav .faFonts {
 	padding-left: 1rem;
 	padding-top: .75rem;
 	margin: 0 2rem;
+	font-size: var(--fsNavBar);
 }
 
 /* home */
@@ -637,6 +664,19 @@ nav .faFonts {
 	padding: 0 2rem;
 }
 
+.packageButton {
+	border: 2px solid var(--clrMain100);
+	background: transparent;
+	color: var(--clrMain100);
+	border-radius: .5rem;
+	text-align: center;
+}
+
+.packageButton:hover {
+	background: var(--clrMain100);
+	color: var(--clrMain900);
+}
+
 .splitBottom {
 	min-height: 60dvh;
 	max-width: 100dvw;
@@ -651,8 +691,8 @@ nav .faFonts {
 }
 
 .planCard {
-	width: 225px;
-	height: 300px;
+	width: 215px;
+	height: 350px;
 	border: 3px solid var(--clrMain100);
 	border-radius: .5rem;
 	box-shadow: 0 0 15px var(--clrMain100);
@@ -666,7 +706,7 @@ nav .faFonts {
 	overflow: hidden;
 }
 
-.planCard span + span {
+.planCard a + span {
 	font-size: .5em;
 }
 
@@ -860,6 +900,219 @@ nav .faFonts {
 	margin: 0 1rem;
 }
 
+/* package pages */
+
+#startHome,
+#sabout,
+#sfaq,
+#stestimonial {
+	max-width: 100dvw;
+	min-height: 100dvh;
+	margin: 0;
+	padding: 4rem 2rem 0 2rem;
+}
+
+#scontactMe {
+	min-height: 90dvh;
+	display: grid;
+	place-items: center;
+	position: relative;
+	z-index: 10;
+	padding-top: 4rem;
+}
+
+#starterHome {
+	max-width: 100dvw;
+	min-height: 100dvh;
+	margin: 0 auto;
+	overflow-x: hidden;
+	position: relative;
+	text-align: center;
+	display: grid;
+	place-items: center;
+	place-content: center;
+	z-index: 99;
+}
+
+#starterHome::before { 
+    content: "";
+    position: absolute;
+    background-image: url("images/Screenshot\ 2024-09-16\ 091902.png");
+	background-size: cover;
+	inset: 0;
+    opacity: .5;
+	z-index: -1;
+}
+
+.starterHomeText {
+	min-height: 70dvh;
+	max-width: 80dvw;
+	display: grid;
+	place-items: center;
+}
+
+.center {
+	display: grid;
+	place-items: center;
+	place-content: center;
+	width: clamp(250px, 80vw, 800px);
+}
+
+.center h1 {
+	font-size: var(--fsSectionHeader);
+}
+
+.center h3 {
+	font-size: var(--fsMain);
+}
+
+.homeButtons {
+	display: flex;
+	gap: 1rem;
+	justify-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.homeButtons a {
+	border: 2px solid var(--clrMain100);
+	color: var(--clrMain900);
+	background: var(--clrMain100);
+	border-radius: .5rem;
+	width: 5rem;
+	font-size: .75rem;
+}
+
+.homeButtons a + a {
+	background: transparent;
+	color: var(--clrMain100);
+}
+
+.homeButtons a:hover {
+	box-shadow: 3px 3px 10px var(--clrMain100);
+	opacity: .5;
+}
+
+#sabout {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#sabout .splitLeft,
+#sabout .splitRight {
+	width: clamp(300px, 50%, 700px);
+	min-height: 90dvh;
+	flex: 1;
+	padding: 2rem;
+	text-align: left;
+}
+
+#sabout .splitLeft {
+	display: grid;
+	place-items: center;
+}
+
+#sabout .splitLeft h2 {
+	font-size: var(--fsSectionHeader);
+	margin-bottom: 1rem;
+
+}
+#sabout .splitLeft ul li {
+	font-size: var(--fsNavBar);
+	margin-bottom: 1rem;
+}
+
+#sabout .splitRight {
+	margin-top: 1rem;
+}
+
+.packageList {
+	list-style: decimal;
+	font-size: var(--fsSpecial);
+}
+
+.imageCards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: .5rem;
+	place-items: center;
+	place-content: center;
+}
+
+.imageCards img {
+	border: 2px solid var(--clrMain100);
+	border-radius: .5rem;
+	box-shadow: 2px 2px 3px var(--clrThemeTeal);
+	max-width: 275px;
+	height: 225px;
+}
+
+.imgScale {
+	object-fit: contain;
+	background: var(--clrMain100);
+}
+
+#sfaq {
+	display: grid;
+	place-items: center;
+	background: var(--clrMain300);
+}
+
+#sfaq .sContainer {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	gap: 1rem;
+	justify-items: center;
+	justify-content: center;
+}
+
+#sfaq .sContainer a {
+	border: 2px solid var(--clrMain100);
+	color: var(--clrMain900);
+	background: var(--clrMain100);
+	border-radius: .5rem;
+	width: 5rem;
+	font-size: .75rem;
+}
+
+#sfaq .sContainer a:hover {
+	box-shadow: 3px 3px 10px var(--clrMain100);
+	opacity: .5;
+}
+
+#sfaq .left, 
+#sfaq .right {
+	width: var(--splitWidth);
+}
+
+#sfaq .right p {
+	font-size: .75rem;
+}
+
+#scontactMe .container {
+	margin-top: 2rem;
+	padding: 0 3rem;
+	max-width: 80dvw;
+	display: grid;
+	place-items: center;
+}
+
+
+#scontactMe .major h2 {
+	color: var(--clrThemeTeal);
+}
+
+#scontactMe::before {
+	content: "";
+	position: absolute;
+	background-image: url("images/Screenshot\ 2024-09-16\ 091902.png");
+	background-size: cover;
+	opacity: .4;
+	inset: 0;
+	z-index: -1;
+}
+
 /* @media */
 
 @media screen and (max-width: 850px) {
@@ -872,57 +1125,97 @@ nav .faFonts {
 		place-items: center;
 		padding: 0 1rem;
 		margin: auto;
+		min-height: 100dvh;
 	}
 
-    nav {
+	#starterHome,
+	#plusHome,
+	#bespokeHome {
+		display: grid;
+		place-items: center;
+		place-content: center;
+		padding: 0 1rem;
+		margin: auto;
+		min-height: 100dvh;
+	}
+
+	#starterHome header {
+		height: 24dvh;
+		margin-top: -2rem;
+	}
+
+	#starterHome .desktop {
+		margin-top: 1rem;
+		font-size: .5rem;
+	}
+
+	#starterHome header nav ul li {
+		font-size: .5rem;
+	
+	}
+	#starterHome header nav ul div {
+		scale: 2;
+		padding-bottom: 1rem;
+	}
+
+	#home header {
+		height: 30dvh;
+		padding-top: .25rem;
+	}
+
+	#home .desktop {
+		margin-top: -1rem;
+		margin-bottom: 3rem;
+	}
+
+    #navBar,
+	#starterHome #navBar {
         display: flex;
 		flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100dvw;
-        min-height: 10dvh;
-        gap: 1rem;
+        width: 100%;
+        height: 100%;
+        gap: .5rem;
         font-size: var(--fsNavBar);
-		margin: auto;
-		padding-right: 2rem;
+		margin: 0 auto;
     }
-    nav * {
+    #navBar * {
         text-decoration: none;
         color: var(--clrMain100);
-        font-size: var(--fsNavBar);
+        font-size: .5rem;
     }
 
-	nav ul { 
+	#navBar ul { 
         list-style: none; 
-        padding: 0; 
-        margin: 0; 
         display: flex; 
         justify-content: center; 
         flex-wrap: wrap; 
         text-decoration: none;
-        font-size: var(--fsNavBar);
-        height: 12dvh;
-        max-width: 90dvw;
+        font-size: .5rem;
+        height: 5dvh;
+        max-width: 100dvw;
         margin: auto;
-		padding-right: 1rem;
+		padding-right: .5rem;
+		gap: .5rem;
     } 
 
-	nav ul .faFonts {
+	#navBar ul .faFonts {
 		margin-left: 2rem;
 		padding: 0 .5rem;
+		scale: 2;
 	}
 
-	nav ul li { 
+	#navBar ul li { 
         margin: 0 10px; 
-        margin-top: .75rem;
         text-decoration: none;
         color: var(--clrMain100);
-		font-size: var(--fsNavBar);
+		font-size: .5rem;
         display: flex;
         justify-content: center;
 		border: 1px solid var(--clrMain100);
 		border-radius: .5rem;
-		width: 4rem;
+		width: fit-content;
 		height: fit-content;
 	}
 	
@@ -933,13 +1226,39 @@ nav .faFonts {
 
     .myLogo {
         width: var(--logoWidth);
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin: auto;
+        margin: 0 auto;
+		margin-top: 1rem;
     }
 
     .myLogo img {
-        width: 100%;
+        width: 70%;
+    }
+
+	#starterHome .myLogo {
+        width: var(--logoWidth);
+        margin-top: 2rem;
+        margin: 0 auto;
+		padding-top: .5rem;
+		margin-bottom: -3rem;
+	}
+
+	
+    #starterHome .myLogo img {
+        width: 70%;
+		padding-bottom: .5rem;
+    }
+
+	.packageLogo {
+		width: var(--packageLogo);
+		display: grid;
+		align-items: center;
+		align-content: center;
+        margin: 0 auto;
+		padding-top: -3rem;
+	}
+
+	.packageLogo img {
+        width: 90%;
     }
 
 	.split {
@@ -949,17 +1268,33 @@ nav .faFonts {
 		justify-content: center;
 		margin: auto;
 		padding-bottom: 1rem;
+		padding-top: .5rem;
 	}
 
 	.splitLeft,
 	.splitRight {
 		display: grid;
 		place-items: center;
+		place-content: center;
 		max-width: 90dvw;
-		padding-right: 2rem;
 		margin: auto;
 	}
-    
+
+	#sabout .splitRight {
+		margin-top: -4rem;
+	
+	}
+	#sabout .splitRight .imageCards {
+		gap: 1rem;
+	}
+
+	#sabout .splitLeft {
+		text-align: start;
+	}
+
+	#packages {
+		margin-left: .75rem;
+	}
 }
 
 
