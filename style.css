@@ -669,6 +669,7 @@ nav .faFonts {
 	background: transparent;
 	color: var(--clrMain100);
 	border-radius: .5rem;
+	width: 8rem;
 	text-align: center;
 }
 
@@ -698,6 +699,7 @@ nav .faFonts {
 	box-shadow: 0 0 15px var(--clrMain100);
 	display: grid;
 	background: var(--ombreTheme);
+	place-items: center;
 	gap: 1rem;
 	margin: 1rem;
 	padding: 1rem;
