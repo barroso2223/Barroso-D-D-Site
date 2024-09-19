@@ -1029,8 +1029,11 @@ nav .faFonts {
 }
 
 .packageList {
-	list-style: decimal;
-	font-size: var(--fsSpecial);
+	font-size: var(--fsMain);
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
 }
 
 .imageCards {
@@ -1277,7 +1280,7 @@ nav .faFonts {
 	.splitRight {
 		display: grid;
 		place-items: center;
-		place-content: center;
+		text-align: left;
 		max-width: 90dvw;
 		margin: auto;
 	}
@@ -1292,6 +1295,11 @@ nav .faFonts {
 
 	#sabout .splitLeft {
 		text-align: start;
+	}
+
+	#sabout .splitLeft .packageList {
+		text-align: left;
+		margin-top: 1rem;
 	}
 
 	#packages {
