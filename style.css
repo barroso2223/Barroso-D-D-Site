@@ -1011,7 +1011,10 @@ nav .faFonts {
 
 #sabout .splitLeft {
 	display: grid;
-	place-items: center;
+	margin: 0 auto;
+	place-content: center;
+	/* place-items: center; */
+	text-align: left;
 }
 
 #sabout .splitLeft h2 {
@@ -1019,9 +1022,10 @@ nav .faFonts {
 	margin-bottom: 1rem;
 
 }
-#sabout .splitLeft ul li {
+#sabout .splitLeft span {
 	font-size: var(--fsNavBar);
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 
 #sabout .splitRight {
