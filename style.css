@@ -397,7 +397,8 @@ video {
 	z-index: -2;
 }
 
-#home .imgContainer a {
+#home .imgContainer a,
+#change .imgContainer a {
 	border: 2px solid var(--clrMain100);
 	background: var(--ombreTheme);
 	color: var(--clrMain100);
@@ -406,7 +407,8 @@ video {
 	
 }
 
-#home .imgContainer a:hover {
+#home .imgContainer a:hover,
+#change .imgContainer a:hover {
 	background: var(--bgaccent);
 	color: var(--clrMain100);
 
@@ -418,11 +420,12 @@ video {
     position: absolute;
     background: var(--clrMain900);
     inset: 0;
-    opacity: .7;
+    opacity: .71;
     z-index: -1;
 }
 
-#home .imgContainer img {
+#home .imgContainer img,
+#change .imgContainer img {
     border: 1px solid --clrMain900;
     border-radius: .5rem;
     box-shadow: 0 0 15px var(--clrMain100);
