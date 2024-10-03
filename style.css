@@ -387,6 +387,16 @@ nav .faFonts {
 	place-items: center;
 }
 
+video {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -2;
+}
+
 #home .imgContainer a {
 	border: 2px solid var(--clrMain100);
 	background: var(--ombreTheme);
@@ -401,17 +411,16 @@ nav .faFonts {
 	color: var(--clrMain100);
 
 }
-/* 
-#home:after,
-#change:after {
+
+#home:before,
+#change:before {
     content: "";
     position: absolute;
-    background: url("images/16_1.png");
-    background-size: cover;
+    background: var(--clrMain900);
     inset: 0;
-    opacity: .25;
+    opacity: .65;
     z-index: -1;
-} */
+}
 
 #home .imgContainer img {
     border: 1px solid --clrMain900;
