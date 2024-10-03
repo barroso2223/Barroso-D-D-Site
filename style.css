@@ -414,8 +414,8 @@ video {
 
 }
 
-#home:before,
-#change:before {
+#home::before,
+#change::before {
     content: "";
     position: absolute;
     background: var(--clrMain900);
@@ -797,7 +797,7 @@ video {
     background: rgba(0,0,0,.1);
 }
 
-.accordionLabel:after {
+.accordionLabel::after {
     content: "+";
     position: absolute;
     top: 50%;
