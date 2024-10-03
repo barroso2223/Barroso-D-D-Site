@@ -211,10 +211,10 @@ header {
 #faq,
 #contactMe,
 #footer {
-	-webkit-animation: scrollReveal ease-in-out both;
-	-moz-animation: scrollReveal ease-in-out both;
-	-o-animation: scrollReveal ease-in-out both;
-	animation: scrollReveal ease-in-out both;
+	-webkit-animation: ease-in-out both scrollReveal;
+	-moz-animation: ease-in-out both scrollReveal;
+	-o-animation: ease-in-out both scrollReveal;
+	animation: ease-in-out both scrollReveal;
 	animation-timeline: view();
 	animation-range: entry 50% cover 50%;
 }
@@ -270,10 +270,10 @@ header {
 
 #gallery,
 #packages {
-	-webkit-animation: scrollReveal ease-in-out both;
-	-moz-animation: scrollReveal ease-in-out both;
-	-o-animation: scrollReveal ease-in-out both;
-	animation: scrollRevealRight ease-in-out both;
+	-webkit-animation: ease-in-out both scrollRevealRight;
+	-moz-animation: ease-in-out both scrollRevealRight;
+	-o-animation: ease-in-out both scrollRevealRight;
+	animation: ease-in-out both scrollRevealRight;
 	animation-timeline: view();
 	animation-range: entry 50% cover 50%;
 }
@@ -328,10 +328,10 @@ header {
 }
 
 #footer {
-	-webkit-animation: scrollReveal2 ease-in-out both;
-	-moz-animation: scrollReveal2 ease-in-out both;
-	-o-animation: scrollReveal2 ease-in-out both;
-	animation: scrollReveal2 ease-in-out both;
+	-webkit-animation: ease-in-out both scrollReveal2;
+	-moz-animation: ease-in-out both scrollReveal2;
+	-o-animation: ease-in-out both scrollReveal2;
+	animation: ease-in-out both scrollReveal2;
 	animation-timeline: view();
 	animation-range: entry 25% cover 25%;
 }
