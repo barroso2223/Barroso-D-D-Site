@@ -202,9 +202,11 @@ header {
 	margin-bottom: .5rem;
 	display: flex;
 	justify-content: center;
+	align-content: center;
 	max-width: 100dvw;
-	min-height: 10dvh;
+	height: clamp(75px, 18vh, 130px);
 	font-size: var(--fsNavBar);
+	margin-top: -2rem;
 }
 
 #about,
@@ -421,22 +423,14 @@ nav ul li {
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
-	border: 1px solid var(--clrMain100);
-	border-radius: .5rem;
 	width: fit-content;
 	height: fit-content;
 	padding: 0 .5rem;
 }
 
-#navBar ul li,
-#navBar ul a {
-	background: var(--ombreTheme);
-	width: fit-content;
-}
-
 #navBar ul li:hover,
 #navBar ul a:hover {
-	background: var(--bgaccent);
+	color: var(--clrThemeBlue);
 }
 
 .desktop {
@@ -446,7 +440,6 @@ nav ul li {
 }
 
 .logoContainer {
-	margin-top: 1rem;
 	top: 0;
 	left: 0;
 }
@@ -545,9 +538,11 @@ video {
 
 .split {
 	display: grid;
+	place-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2rem;
 	padding: .5rem 2rem ;
+	margin-top: -4rem;
 }
 
 .splitLeft,
@@ -1364,8 +1359,6 @@ video {
 		font-size: .5rem;
         display: flex;
         justify-content: center;
-		border: 1px solid var(--clrMain100);
-		border-radius: .5rem;
 		width: fit-content;
 		height: fit-content;
 	}
