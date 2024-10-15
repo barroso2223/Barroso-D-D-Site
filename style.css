@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 :root {
-	--clrThemeBlue: rgb(84, 119, 223);
-	--clrThemeTeal: rgb(17, 221, 204);
+	--clrThemeBlue: rgb(64, 235, 221);
+	--clrThemeTeal: rgb(154, 124, 181);
 	--clrMain100: white;
 	--clrMain300: rgb(165, 163, 163);
 	--clrMain900: black;
@@ -130,7 +130,7 @@ p {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-	color: var(--clrMain100);
+	color: var(--clrThemeTeal);
 }
 
 #nextPageIcons a:hover {
@@ -430,7 +430,7 @@ nav ul li {
 
 #navBar ul li:hover,
 #navBar ul a:hover {
-	color: var(--clrThemeBlue);
+	color: var(--clrThemeTeal);
 }
 
 .desktop {
@@ -457,6 +457,9 @@ nav ul li {
 	margin: -1rem;
 }
 
+.myLogo img:hover {
+	stroke: var(--clrThemeTeal);
+}
 
 .packageLogo {
 	width: var(--packageLogo);
