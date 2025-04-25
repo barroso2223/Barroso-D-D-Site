@@ -19,3 +19,12 @@ function initScrollAnimations() {
   document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
   });
+
+// AOS Script 
+
+document.addEventListener("DOMContentLoaded", function() {
+  AOS.init({
+      once: false,     // Optional: Make animations repeat when re-entering
+      mirror: true     // Optional: Explicitly set mirror globally
+  });
+});

@@ -1,0 +1,453 @@
+:root {
+    --clrTheme100: rgb(189, 210, 246);
+    --clrTheme400: rgb(119, 148, 210);
+    --clrTheme900: #373a9c;
+    --cltThemeOmbre: linear-gradient(to left, 
+    var(--clrTheme900) 30%, var(--clrTheme100));
+
+    --clrMain100: white;
+    --clrMain900: black;
+
+    --americanColor: rgb(46, 53, 87);
+    --foresterscolor: rgb(2, 124, 137);
+    --illinoiscolor: rgb(38, 106, 103);
+    --aigcolor: rgb(9, 34, 124);
+    --transamericacolor: rgb(232, 51, 51);
+    --aetnacolor: rgb(47, 7, 64);
+
+    --ffTheme: "Poppins", serif;
+    --ffAccent: Arial, Helvetica, sans-serif; 
+
+    --americanBGImage: ("../swiftSite/images/bgImage.png");
+    --forestersBGImage: ("/images/bgImage2.png");
+    --illinoisBGImage: ("/images/bgImage3.png");
+    --aigBGImage: ("/images/bgImage4.png");
+    --transamericaBGImage: ("/images/bgImage5.png");
+    --aetnaBGImage: ("/images/bgImage6.png");
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100dvw;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ffTheme);
+    font-weight: 400;
+    font-size: clamp(.75rem, 4vw, 1.25rem);
+    line-height: 1.6;
+    background: var(--clrMain900);
+    color: var(--clrMain100);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", serif;
+}
+/* Custom styles for Left Text Right Image */
+
+#imgLeftTextRight header {
+    width: 100dvw;
+    height: 100dvh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 10px 10px 20px var(--clrMain100);
+}
+
+.right-image {
+    width: 50%;
+    flex: 1 1 300px;
+}
+
+
+.left-text {
+    width: 50%;
+    color: var(--clrTheme100);
+    background-color: rgba(0, 0, 0, .3);
+    text-shadow: 1px 1px 5px var(--clrMain900);
+    gap: 1rem;
+    border-radius: .5rem;
+    height: auto;
+    backdrop-filter: blur(10px);
+    flex: 1 1 300px;
+    margin-top: 10rem;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 1rem !important;
+    padding: .5rem 1rem;
+    background-color: var(--clrTheme400);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+.btn-bg {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain100);
+    border: none;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+.btn.hover-btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+
+/* Custom styles for Right Text Left Image */
+
+#textLeftImgRight header {
+    width: 100dvw;
+    height: 100dvh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.header-containers {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 10px 10px 20px var(--clrMain100);
+}
+
+.left-image {
+    width: 50%;
+    flex: 1 1 300px;
+    overflow: hidden;
+}
+
+
+.right-text {
+    width: 50%;
+    color: var(--clrTheme100);
+    background-color: rgba(0, 0, 0, .3);
+    text-shadow: 1px 1px 5px var(--clrMain900);
+    backdrop-filter: blur(10px);
+    gap: 1rem;
+    border-radius: .5rem;
+    height: auto;
+    flex: 1 1 300px;
+    margin-top: 10rem;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 1rem !important;
+    padding: .5rem 1rem;
+    background-color: var(--clrTheme400);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+.btn-bg {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain100);
+    border: none;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+.btn.hover-btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+
+/* Custom styles for Right Img Left Text */
+
+#imgLeftTextRight header {
+    width: 100dvw;
+    height: 100dvh;
+    margin: auto;
+}
+
+.header-containers {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 10px 10px 20px var(--clrMain100);
+}
+
+.left-image {
+    width: 50%;
+    flex: 1 1 300px;
+    overflow: hidden;
+}
+
+
+.right-text {
+    width: 50%;
+    color: var(--clrTheme100);
+    background-color: rgba(0, 0, 0, .3);
+    text-shadow: 1px 1px 5px var(--clrMain900);
+    backdrop-filter: blur(10px);
+    gap: 1rem;
+    border-radius: .5rem;
+    height: auto;
+    flex: 1 1 300px;
+    margin-top: 10rem;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 1rem !important;
+    padding: .5rem 1rem;
+    background-color: var(--clrTheme400);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+.btn-bg {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain100);
+    border: none;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+.btn.hover-btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+/* Custom styles for no Img Text center */
+
+#noImgTextCenter  {
+    width: 100dvw;
+    height: 100dvh;
+    margin: auto;
+}
+
+#textContainer {
+    max-width: 800px;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 1rem !important;
+    padding: .5rem 1rem;
+    background-color: var(--clrTheme400);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+.btn-bg {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain100);
+    border: none;
+}
+
+.btn.hover-btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+
+/* Custom styles for Right Text Left Image */
+
+.textLeftSmlImgRight {
+    width: 100dvw;
+    height: 100dvh;
+    margin: auto;
+}
+
+.header-containers {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.shadowWhite {
+    box-shadow: 10px 10px 20px var(--clrMain100);
+}
+
+.left-image {
+    width: 50%;
+    flex: 1 1 300px;
+    overflow: hidden;
+}
+
+
+.right-text {
+    width: 50%;
+    color: var(--clrTheme100);
+    background-color: rgba(0, 0, 0, .3);
+    text-shadow: 1px 1px 5px var(--clrMain900);
+    backdrop-filter: blur(10px);
+    gap: 1rem;
+    border-radius: .5rem;
+    height: auto;
+    flex: 1 1 300px;
+    margin-top: 10rem;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 1rem !important;
+    padding: .5rem 1rem;
+    background-color: var(--clrTheme400);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+.btn-bg {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain100);
+    border: none;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+.btn.hover-btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+
+/* Custom styles for Right Img Left Text */
+
+.textRightSmlImgLeft {
+    width: 100dvw;
+    height: 100dvh;
+    margin: auto;
+}
+
+.header-containers {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 10px 10px 20px var(--clrMain100);
+}
+
+.left-image {
+    width: 50%;
+    flex: 1 1 300px;
+    overflow: hidden;
+}
+
+
+.right-text {
+    width: 50%;
+    color: var(--clrTheme100);
+    background-color: rgba(0, 0, 0, .3);
+    text-shadow: 1px 1px 5px var(--clrMain900);
+    backdrop-filter: blur(10px);
+    gap: 1rem;
+    border-radius: .5rem;
+    height: auto;
+    flex: 1 1 300px;
+    margin-top: 10rem;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 1rem !important;
+    padding: .5rem 1rem;
+    background-color: var(--clrTheme400);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+.btn-bg {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain100);
+    border: none;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+.btn.hover-btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
