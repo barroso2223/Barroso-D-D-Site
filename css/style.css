@@ -849,6 +849,9 @@ video {
 #advertisement .cardContainer .card {
 	width: clamp(300px, 19vw, 500px);
 	height: auto;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px var(--clrMain100);
+	aspect-ratio: 16/9;
 }
 
 #advertisement .card img {
@@ -856,7 +859,9 @@ video {
 	height: auto;
 	object-fit: cover;
 	border-radius: 1rem;
-	box-shadow: 5px 5px 15px var(--clrMain100);
+	padding: 0;
+	scale: 1.05;
+	aspect-ratio: 16/9;
 }
 
 #advertisement #nextPageIcons {
