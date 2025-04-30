@@ -325,15 +325,19 @@
 	background: var(--ombre-theme);
   }
   
-   .calendar {
-    width: 100%;
-    max-width: 1000px; /* Optional: limit width on larger screens */
-    margin: 0 auto;
+   .calendar {width: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
   }
 
-  .calendly-inline-widget {
-    min-width: 320px;
-    height: 800px; /* Increase this value as needed */
+  .calendly-inline-widget {width: 100%;
+	max-width: 1000px;
+	height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
   }
 
   /* ======================
@@ -377,7 +381,13 @@
 	}
 
 	
+	.calendly-inline-widget {
+		height: 750px;
+		min-width: 100% !important;
+	}
+
 	.calendar {
-		margin: auto !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
   }
