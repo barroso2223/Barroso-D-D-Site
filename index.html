@@ -25,287 +25,462 @@
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="/css/style.css"/>
-		<script src="/main.js"></script>
 	</head>
 	<body class="is-preload">
-		<!-- Header -->
-
-		
-		<section id="home">
-
-			<video src="Videos/webDevelopmentLargeNew.mp4" autoplay muted loop playsinline></video>
-			<video src="Videos/WebdevelopmentlargenewWebm.webm" autoplay muted loop playsinline></video>
-
-			<header>
-				<nav id="navBar">
-					<div class="logoContainer">
-						<div  class="myLogo"><img src="images/BarrosoDigitalLogoWCBG.png" alt="Barroso Digital Design Logo" >
-						</div>
-					</div>
-					<div class="desktop">
-						<ul>
-							<li><a href="#about">About</a></li>
-							<li><a href="#gallery">Gallery</a></li>
-							<li><a href="#faq" >FAQs</a></li>
-							<li><a href="#packages">Packages</a></li>
-							<li><a href="#templates">Templates</a></li>
-							<li><a href="#advertisement">Advertisements</a></li>
-							<li><a href="#contactMe" >Contact</a></li>
-							<li><a href="spanish.html" >Espa&ntilde;ol</a></li>
-							
-						</ul> 
-					</div>
-					<div class="faFonts">
-						<a href="https://x.com/dannydevelops82" target="_blank"  rel="noopener" class="fa-brands fa-x-twitter fa-2x"><span class="label"></span></a>
-						<a href="https://www.linkedin.com/in/daniel-barroso82/" target="_blank"  rel="noopener" class="fa-brands fa-linkedin fa-2x"><span class="label"></span></a>
-						<a href="https://www.instagram.com/danny.develops" class="fa-brands fa-square-instagram fa-2x" target="_blank"  rel="noopener"><span class="label"></span></a>
-						<a href="https://github.com/barroso2223" target="_blank"  rel="noopener" class="fa-brands fa-square-github fa-2x"><span class="label"></span></a>
-					</div>
+		<nav class="navbar navbar-expand-lg fixed-top bg-black navbar-dark py-2">
+			<div class="container d-flex justify-content-between align-items-center px-3">
+				<a class="navbarLogo navbar-brand m-auto" href="#home" style="width: 200px;">
+					<img src="/images/BarrosoDigitalLogoWCBG.png" alt="Barroso Digital Design Logo" style="width: 100%; height: 100%;">
+				</a>
+				
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto gap-lg-4 fs-5">
+						<li class="nav-item"><a class="nav-link text-custom" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link text-custom" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link text-custom" href="#packages">Packages</a></li>
+						<li class="nav-item"><a class="nav-link text-custom" href="#faq">FAQ</a></li>
+						<li class="nav-item"><a class="nav-link text-custom" href="#gallery">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link text-custom" href="#contactMe">Contact</a></li>
+					</ul>
+					
+				</div>
+				
+				<div class="d-flex gap-3 ms-lg-4">
+					<a href="mailto:dannybhomes@gmail.com" class="text-custom navIcon">
+						<i class="fa-solid fa-envelope fa-lg"></i>
+					</a>
+					<a href="sms:+17868739593" class="text-custom navIcon">
+						<i class="fa-solid fa-comment fa-lg"></i>
+					</a>
+					<a href="tel:+17868739593" class="text-custom navIcon">
+						<i class="fa-solid fa-phone fa-lg"></i>
+					</a>
+				</div>
+				
+				
+				<button class="navbar-toggler px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</nav>
 	
-					<!-- <div class="hamburgerMenu"><i class="fa fa-bars" aria-hidden="true"></i>
-						<div class="hamburgerMenuCard">
-							<div class="hamburgerContent">
-								<ul>
-									<li><a href="#about">Why Me</a></li>
-									<li><a href="#faq" >FAQs</a></li>
-									<li><a href="#packages">Our Plans</a></li>
-									<li><a href="#contactMe" >Contact</a></li>
-									<li><a href="spanish.html" >Espa&ntilde;ol</a></li>
-									<li><a href="https://x.com/dannydevelops82" target="_blank"  rel="noopener" class="fa-brands fa-x-twitter fa-2x"><span class="label"></span></a></li>
-									<li><a href="https://www.linkedin.com/in/daniel-barroso82/" target="_blank"  rel="noopener" class="fa-brands fa-linkedin fa-2x"><span class="label"></span></a></li>
-									<li><a href="https://www.instagram.com/danny.develops" class="fa-brands fa-square-instagram fa-2x" target="_blank"  rel="noopener"><span class="label"></span></a></li>
-									<li><a href="https://github.com/barroso2223" target="_blank"  rel="noopener" class="fa-brands fa-square-github fa-2x"><span class="label"></span></a></li>
-								</ul>
+		<!-- Hero Section -->
+		<section id="home" class="vh-100 position-relative overflow-hidden">
+			<video class="bg-video position-fixed w-100 h-100 object-fit-cover" autoplay muted loop>
+				<source src="Videos/5.2.mp4" type="video/mp4">
+				<!-- <source src="Videos/WebdevelopmentlargenewWebm.webm" type="video/webm"> -->
+			</video>
+			
+			<div class="container mobileContainer vw-100 h-100 d-flex align-items-center">
+				<div class="row g-5 flex-wrap justify-content-between vw-100">
+					<div class="col-lg-6 col-12 text-center text-lg-start text-white px-3 w-lg-50 frosted-card" style="max-width: 700px;">
+						<h1 class="display-5 mb-4 text-shadow-black">Creating Stunning Websites for Businesses of All Sizes</h1>
+						<p class="fs-4 text-shadow-black">Welcome to Barroso Digital Design! We specialize in designing and developing visually appealing websites for businesses, from small startups to large corporations. We ensure a professional and tailored online presence for every client.</p>
+						<a href="#contact" class="btn bg-custom text-shadow-black btn-outline-light btn-lg">Schedule Consultation</a>
+					</div>
+					<div class="col-lg-6 col-12 text-center px-5 my-auto w-lg-50" style="max-width: 900px;">
+						
+					</div>
+				</div>
+			</div>
+
+		</section>
+	
+		<!-- About Section -->
+		<section id="about" class="py-5 bg-black">
+			<div class="container">
+				<h2 class="display-3 text-center mb-5">About Us</h2>
+				<p class="lead text-center mb-5" data-aos="flip-right" data-aos-duration="3000">At Barroso Digital Design, We offer a range of key features and benefits that set us apart from the competition. We ensure a professional and tailored online presence for every client. Our flexible payment plans cater to all financial needs, and our top-quality service and support guarantee customer satisfaction. Elevate your online presence with us today and unlock your true potential.</p>
+				
+				<div class="row g-4">
+					<div class="col-md-6 col-lg-4" data-aos="zoom-in-right" data-aos-duration="1500">
+						<div class="card bg-custom shadow-lg h-auto border text-center">
+							<div class="card-body">
+								<h3 class="card-title h5 text-center">Fully Responsive Design</h3>
+								<div class="img-card m-auto" style="width: 250px; height: 250px; background-size: contain;"><img style="width: 100%; height: 100%; background-size: contain; inset: 0;" src="images/responsiveSquare.png" class="card-img-top" alt="Responsive Design"></div>
+								<p class="card-text py-3">Responsive design creates mobile-friendly websites that adapt seamlessly to all devices. Essential for modern user experience and SEO performance, professional responsive development boosts engagement and conversions through flawless screen-size adaptation.</p>
 							</div>
 						</div>
-					</div> -->
-				</nav>
-			</header>
-			<div class="split">
-                <div class="splitLeft">
-                    <div class="imgContainer">
-                        <span class="image fit"><img src="images/9.png" alt="" /></span>
-                        <a href="#contactMe" >Schedule Consultation</a>
-                    </div>
-                </div>
-				<div class="splitRight">
-					<h1>Creating Stunning Websites for Businesses of All Sizes</h1>
-					<p>Welcome to Barroso Digital Design! We specialize in designing and developing visually appealing websites for businesses, from small startups to large corporations. We ensure a professional and tailored online presence for every client.</p>
-                    
-				</div>
-			</div>
-		</section>
-			
-
-		<!-- about -->
-		<section id="about">
-			<div class="container">
-				<section class="title main" id="fadeIn1">
-					
-					<h2>About Barroso Digital Design</h2>
-					<p>At Barroso Digital Design, We offer a range of key features and benefits that set us apart from the competition. We ensure a professional and tailored online presence for every client. Our flexible payment plans cater to all financial needs, and our top-quality service and support guarantee customer satisfaction. Elevate your online presence with us today and unlock your true potential.</p>
-				
-				</section>
-				
-				<section class="portfolioGrid">
-					<div class="aboutCard" data-aos="slide-right" data-aos-duration="1500" data-aos-mirror="true">
-						<h3>Fully Responsive Design</h3></a>
-						<img src="images/9.png" alt="">
-						<p>Responsive design is a web development approach that ensures your website looks and functions perfectly across all devices, from desktops to smartphones. With the increasing use of mobile devices, having a fully responsive website is crucial for providing a seamless user experience, improving SEO rankings, and driving more traffic to your site. Hiring a website developer who specializes in responsive design guarantees that your website will adapt to any screen size, keeping your audience engaged and increasing your conversion rates.</p>
 					</div>
-					<div class="aboutCard" data-aos="slide-up" data-aos-duration="1500" data-aos-mirror="true">
-						<h3>SEO Optimization</h3></a>
-						<img  class="seo" src="images/englishSEO.webp" alt="">
-						<p>SEO (Search Engine Optimization) is the practice of optimizing your website to rank higher on search engine results pages, making it easier for potential customers to find you online. A well-executed SEO strategy increases your visibility, drives organic traffic, and enhances your credibility, ultimately leading to more leads and sales. Hiring a developer who understands SEO ensures that your website is built with best practices in mind, giving you a competitive edge in the digital marketplace.
-						</p>
+					<div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-duration="1500">
+						<div class="card bg-custom shadow-lg h-auto border text-center">
+							<div class="card-body">
+								<h3 class="card-title h5 text-center">SEO Optimization</h3>
+								<div class="img-card m-auto" style="width: 250px; height: 250px; background-size: cover;"><img style="width: 100%; height: 100%; background-size: contain; inset: 0;" src="images/englishSEO.webp" class="card-img-top" alt="Responsive Design"></div>
+								<p class="card-text py-3">SEO boosts website visibility in search results, driving organic traffic and credibility that converts to sales. Partnering with SEO-focused developers ensures technical excellence for digital marketplace dominance.</p>
+							</div>
+						</div>
 					</div>
-					<div class="aboutCard" data-aos="slide-left" data-aos-duration="1500" data-aos-mirror="true">
-						<h3>Customized Layout & Design</h3></a>
-						<img src="images/11.png" alt="">
-						<p>A customized layout and design give your website a unique look and feel that aligns with your brand identity, helping you stand out in a crowded online market. Unlike generic templates, a custom design is tailored to meet the specific needs of your business and your audience, ensuring a more engaging and memorable user experience. Hiring a developer who specializes in custom layouts and designs guarantees that your website will not only be visually appealing but also strategically crafted to convert visitors into loyal customers.</p>
+					<div class="col-md-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="1500">
+						<div class="card bg-custom shadow-lg h-auto border text-center">
+							<div class="card-body">
+								<h3 class="card-title h5 text-center">Customized Layout & Design</h3>
+								<div class="img-card m-auto" style="width: 250px; height: 250px; background-size: cover;"><img style="width: 100%; height: 100%; background-size: contain; inset: 0;" src="images/customLayout.png" class="card-img-top" alt="Responsive Design"></div>
+								<p class="card-text py-3">Custom web design crafts unique brand-aligned experiences that outperform templates. Strategic layouts engage audiences and convert visitors through tailored user journeys, building lasting customer relationships.</p>
+							</div>
+						</div>
 					</div>
-				</section>
-				<ul id="nextPageIcons">
-					<li><a href="#gallery" id="downArrow" class="fa fa-arrow-down"></a></li>
-					<li><a href="#home" id="faHome" class="fa fa-home"></a></li>
-				</ul>
+					
+				</div>
 			</div>
-		</section>
 
-		<section id="gallery">
-			<h2>Gallery</h2>
-			<div class="galleryGrid">
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://buttereatery.netlify.app/" target="_blank"><img src="/gifFolder/buttereatery.gif" alt=""></a>
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://cakesbyg.netlify.app/" target="_blank"><img src="/gifFolder/cakesbyg.gif" alt=""></a>
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://courierwebsite.netlify.app" target="_blank"><img src="/gifFolder/courierwebsite.gif" alt=""></a>
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://ecommercepremium.netlify.app" target="_blank"><img src="/gifFolder/ecommercepremium.gif" alt=""></a>
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://danielbarroso.netlify.app" target="_blank"><img src="/gifFolder/danielbarroso.gif" alt=""></a>
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://dannybhomes.netlify.app" target="_blank"><img src="/gifFolder/dannybhomes.gif" alt=""></a>
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://lashessalon.netlify.app" target="_blank"><img src="/gifFolder/lashessalon.gif" alt=""></a>
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://plumberplus.netlify.app" target="_blank"><img src="/gifFolder/plumberplus.gif" alt=""></a>
-					
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://starterplan.netlify.app" target="_blank"><img src="/gifFolder/starterplan.gif" alt=""></a>
-					
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://starterplusplan.netlify.app" target="_blank"><img src="/gifFolder/starterplusplan.gif" alt=""></a>
-					
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://swiftsigningfl.netlify.app" target="_blank"><img src="/gifFolder/swiftsigningfl.gif" alt=""></a>
-					
-				</div>
-				<div class="galleryCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-					<a href="https://tattooplus.netlify.app" target="_blank"><img src="/gifFolder/tattooplus.gif" alt=""></a>`
-					
-				</div>
-			</div>
-			<ul id="nextPageIcons">
-				<li><a href="#faq" id="downArrow" class="fa fa-arrow-down"></a></li>
-				<li><a href="#home" id="faHome" class="fa fa-home"></a></li>
-			</ul>
-		</section>
-
-		<!-- faq -->
-		<section id="faq" class="main style2">
-            <h2>FAQs</h2>
-			<div class="accordion">
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question1" class="accordionInput" checked>
-                    <label class="accordionLabel" for="question1">1. “I’m not sure if I need a new website right now.”</label>
-                    <div class="accordionContent">
-                        <p>Your website is the digital storefront of your business. If it’s not making a great first impression, you’re losing potential customers. Let’s chat and see how a fresh, modern design could drive more business your way.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question2" class="accordionInput">
-                    <label class="accordionLabel" for="question2">2. “I don’t have the budget for a new website.”</label>
-                    <div class="accordionContent">
-                        <p>A great website doesn’t have to break the bank. We offer scalable solutions tailored to fit your budget, ensuring you get the most value for your investment. Let’s discuss options that work for you.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question3" class="accordionInput">
-                    <label class="accordionLabel" for="question3">3. “I can build my own website using a template.”</label>
-                    <div class="accordionContent">
-                        <p>Templates are great for getting started, but they can only take you so far. Our custom designs are built to reflect your unique brand and drive results. A consultation will show you the difference a professional touch can make.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question4" class="accordionInput">
-                    <label class="accordionLabel" for="question4">4. “I’m worried about the time it will take to build a new site.”</label>
-                    <div class="accordionContent">
-                        <p>We understand that your time is valuable. Our streamlined process ensures that your new website is delivered efficiently without compromising quality. Let’s talk about a timeline that works for you.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question5" class="accordionInput">
-                    <label class="accordionLabel" for="question5">5. “I’ve worked with other designers before and wasn’t satisfied.”</label>
-                    <div class="accordionContent">
-                        <p>We get it, finding the right fit can be challenging. Our approach is different: We listen, collaborate, and keep you in the loop every step of the way. Let’s meet and see if we're the right match to bring your vision to life.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question6" class="accordionInput">
-                    <label class="accordionLabel" for="question6">6. “My current website works fine; why change it?”</label>
-                    <div class="accordionContent">
-                        <p>A website that “works fine” is missing opportunities to excel. In today’s competitive market, you need a site that not only works but stands out. Let’s discuss how we can elevate your online presence.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question7" class="accordionInput">
-                    <label class="accordionLabel" for="question7">7. “I don’t have time to think about a new website.”</label>
-                    <div class="accordionContent">
-                        <p>Your time is precious, which is why we handle everything for you—from design to launch—so you can focus on what you do best. Let’s chat about how we can take this off your plate and deliver results.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question8" class="accordionInput">
-                    <label class="accordionLabel" for="question8">8. “I’m concerned about ongoing maintenance and support.”</label>
-                    <div class="accordionContent">
-                        <p>We offer comprehensive support and maintenance packages to keep your site running smoothly long after launch. Let’s discuss how we can ensure your website stays up-to-date and hassle-free.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question9" class="accordionInput">
-                    <label class="accordionLabel" for="question9">9. “I’m not tech-savvy, so I’m worried I won’t understand the process.”</label>
-                    <div class="accordionContent">
-                        <p>We pride ourselves on making the complex simple. We’ll guide you through every step, in plain language, ensuring you feel confident and informed throughout the entire process. Let’s have a conversation about how we can make this easy for you.</p>
-                    </div>
-				</div>
-				<div>
-					<input type="checkbox" name="faqAccordion" id="question10" class="accordionInput">
-                    <label class="accordionLabel" for="question10">10. “I’m just browsing right now, not ready to commit.”</label>
-                    <div class="accordionContent">
-                        <p>No pressure—our consultation is just a conversation to explore possibilities. You’ll walk away with valuable insights, whether you’re ready to move forward or not. Let’s talk about how we can help when the time is right.</p>
-                    </div>
-				</div>
-			</div>
-			<ul id="nextPageIcons">
-				<li><a href="#packages" id="downArrow" class="fa fa-arrow-down"></a></li>
-				<li><a href="#home" id="faHome" class="fa fa-home"></a></li>
-			</ul>
 		</section>
 		
+		
 		<!-- packages -->
-		<section id="packages">
+		<section id="packages" class="py-5 vw-100 bg-grey">
+			<h2 class="display-3 text-center">Packages</h2>
 			<div class="splitY">
-				<div class="packagesTop splitTop">
+				<div class="packagesTop splitTop text-center px-5">
 					<h2>Professional Websites for Everyone</h2> 
 					<p class="majorText">Choose the Perfect Design Package for Your Website</p>
 					<span>Choose from our tailored plans starting at $500. Each plan is designed to meet different needs, with the flexibility to customize based on your specific requirements.</span>
 				</div>
-				<div class="splitBottom">
-					<div class="planCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-						<h4>Starter Plan</h4>
+				<div class="splitBottom d-flex row g-5 px-2 w-100 m-auto justify-content-center text-center gap-5">
+					<div class="planCard frosted-card col-12 col-sm-6 col-lg-3 bg-custom d-flex flex-column align-items-center justify-content-center" style="width: 300px; height: 325px;"  data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+						<h3>Starter Plan</h3>
 						<p>Template 1-5 pages with basic content, mobile responsive, and social media integration</p>
 						<span>$500+</span>
-						<a class="packageButton" href="starter.html" target="_blank" rel="noopener">Learn More</a>
-						<span>*Customizations available to meet your unique needs.</span>
+						<!-- <a class="packageButton button" href="starter.html" target="_blank" rel="noopener">Learn More</a> -->
+						<span class="pt-2">*Customizations available to meet your unique needs.</span>
 					</div>
-					<div class="planCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-						<h4>Starter Plus Plan</h4>
+					<div class="planCard frosted-card col-12 col-sm-6 col-lg-3 bg-custom d-flex flex-column align-items-center justify-content-center" style="width: 300px; height: 325px;" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+						<h3>Starter Plus Plan</h3>
 						<p>Template 1-5 pages with SEO content, contact form, and Google integration</p>
 						<span>$1,000+</span>
-						<a class="packageButton" href="plus.html" target="_blank" rel="noopener">Learn More</a>
-						<span>*Customizations available to meet your unique needs.</span>
+						<!-- <a class="packageButton button" href="plus.html" target="_blank" rel="noopener">Learn More</a> -->
+						<span class="pt-2">*Customizations available to meet your unique needs.</span>
 					</div>
-					<div class="planCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-						<h4>Bespoke Plan</h4>
+					<div class="planCard frosted-card col-12 col-sm-6 col-lg-3 bg-custom d-flex flex-column align-items-center justify-content-center" style="width: 300px; height: 325px;" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+						<h3>Bespoke Plan</h3>
 						<p>Completely customized website with all the features of the Starter Plus Plan</p>
 						<span>$2,500+</span>
-						<a class="packageButton" href="bespoke.html" target="_blank" rel="noopener">Learn More</a>
-						<span>*Customizations available to meet your unique needs.</span>
+						<!-- <a class="packageButton button" href="bespoke.html" target="_blank" rel="noopener">Learn More</a> -->
+						<span class="pt-2">*Customizations available to meet your unique needs.</span>
 					</div>
-					<div class="planCard" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-						<h4>Corporate Plan</h4>
+					<div class="planCard frosted-card col-12 col-sm-6 col-lg-3 bg-custom d-flex flex-column align-items-center justify-content-center" style="width: 300px; height: 325px;" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+						<h3>Corporate Plan</h3>
 						<p>5-10 page custom website with advanced features and top-notch support</p>
-						starting at $10,000
+						<span>$10,000+</span>
+						
+						<span class="pt-2">*Customizations available to meet your unique needs.</span>
 					</div>
 				</div>
 			
 			</div>
-			<ul id="nextPageIcons">
-				<li><a href="#advertisement" id="downArrow" class="fa fa-arrow-down"></a></li>
-				<li><a href="#home" id="faHome" class="fa fa-home"></a></li>
-			</ul>
+		</section>
+			
+			
+
+		
+
+		<!-- faq -->
+		<section id="faq" class="py-5 vw-100 bg-black">
+			<h2 class="display-3 text-center">FAQs</h2>
+
+			<div class="faq-container">
+				<div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question1" class="accordionInput" checked>
+					<label class="accordionLabel" for="question1">
+					  <span class="accordionText">1. “Is my current website costing me customers?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>83% of users will leave a site that takes over 3 seconds to load. We build <strong>blazing-fast, mobile-first websites</strong> optimized for SEO and conversions. Let’s run a free performance audit to see where you’re losing leads.</p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question2" class="accordionInput">
+					<label class="accordionLabel" for="question2">
+					  <span class="accordionText">2. “How much does a professional website cost?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>Our transparent pricing starts at $500 for static sites with <strong>no hidden fees</strong>. Unlike subscription platforms, you own the site outright. Need e-commerce or custom features? We tailor solutions to your budget.</p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question3" class="accordionInput">
+					<label class="accordionLabel" for="question3">
+					  <span class="accordionText">3. “Are there ongoing costs for website maintenance?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p><strong>No mandatory fees</strong> – static sites enjoy free Netlify hosting forever. You only pay for your domain ($10-$15/year). Need updates? Choose from our <em>flexible maintenance plans</em>:</p>
+					  
+					  <ul class="mt-3 space-y-2">
+						<li>✓ <strong>Pay-As-You-Go</strong>: $100/hour (ideal for occasional updates)</li>
+						<li>✓ <strong>3-Month Plan</strong>: $90/hour (save 10% + priority scheduling)</li>
+						<li>✓ <strong>6-Month Plan</strong>: $75/hour (save 25% + urgent request access)</li>
+						<li>✓ <strong>12-Month Plan</strong>: $50/hour (save 50% + dedicated support)</li>
+					  </ul>
+				  
+					  <p class="mt-3">The longer you commit, the more you save. <a href="#contactMe" class="text-custom hover:underline" target="_blank">Schedule a consultation</a> to estimate your annual maintenance needs.</p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question4" class="accordionInput">
+					<label class="accordionLabel" for="question4">
+					  <span class="accordionText">4. “Why not use Wix/SquareSpace?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>DIY builders limit SEO and speed. Our <strong>custom-coded websites</strong> load 3x faster, rank higher in Google, and reflect your unique brand. Plus: You own 100% of the content and code.</p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question5" class="accordionInput">
+					<label class="accordionLabel" for="question5">
+					  <span class="accordionText">5. “How long does website development take?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>Most sites launch in 2-4 weeks. Our 4-phase process (<em>Discover > Design > Develop > Deploy</em>) keeps projects on track. We handle all technical work – you just approve the final product.</p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question6" class="accordionInput">
+					<label class="accordionLabel" for="question6">
+					  <span class="accordionText">6. “What if I need help after launch?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+						<p>All sites include <strong>30 days of free post-launch support</strong> to ensure everything runs smoothly. After that, choose your ideal maintenance plan:</p>
+
+						<ul class="mt-3 space-y-2">
+						  <li>✓ <strong>Pay-As-You-Go</strong>: Perfect for occasional tweaks ($100/hour)</li>
+						  <li>✓ <strong>Prepaid Plans</strong>: Save up to 50% with 3/6/12-month commitments</li>
+						</ul>
+						
+						<p class="mt-3">See <a href="#question3" class="text-custom hover:underline">Question #3</a> for full pricing details. No contracts – scale your support up/down as needed. <em>Only pay for what you use!</em></p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question7" class="accordionInput">
+					<label class="accordionLabel" for="question7">
+					  <span class="accordionText">7. “I’ve been burned by web designers before.”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>Our <strong>bulletproof process</strong> eliminates common frustrations:</p>
+				  
+					  <div class="mt-3 space-y-2 text-sm">
+						<!-- Security Layer 1: Payment Protection -->
+						<div class="flex items-start gap-4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="blueviolet" class="bi bi-patch-check-fill my-3" viewBox="0 0 16 16">
+								<path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+							  </svg>
+						  <div class="ml-2">
+							<strong>Pay-As-We-Progress</strong><br>
+							<span class="block text-xs text-gray-600 mt-1">
+							  50% after mockup approval → 25% at mid-project → 25% at launch<br>
+							  <em>Per Contract §3.1: "No payment until design approval"</em>
+							</span>
+						  </div>
+						</div>
+				  
+						<!-- Security Layer 2: Client Control -->
+						<div class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="blueviolet" class="bi bi-clipboard-check-fill my-3" viewBox="0 0 16 16">
+								<path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+								<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+							  </svg>
+						  <div class="ml-2">
+							<strong>Complete Control</strong><br>
+							<span class="block text-xs text-gray-600 mt-1">
+							  Required approvals: Mockup → Mid-Project → Final Site<br>
+							  <em>Contract §2.3: "Client owns final site after payment"</em>
+							</span>
+						  </div>
+						</div>
+				  
+						<!-- Security Layer 3: Proof & Protection -->
+						<div class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="blueviolet" class="bi bi-file-code-fill my-3" viewBox="0 0 16 16">
+								<path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708"/>
+							  </svg>
+						  <div class="ml-2">
+							<strong>See Proof First</strong><br>
+							<span class="block text-xs text-gray-600 mt-1">
+							  <a href="#gallery" class="text-blue-600 hover:underline">View finished website demos</a> +<br>
+							  30-day post-launch support (Contract §5.4)
+							</span>
+						  </div>
+						</div>
+					  </div>
+				  
+					  <div class="mt-4 p-3 bg-purple-50 rounded-lg">
+						<p class="text-xs font-semibold text-purple-800">"We forfeit final 25% payment if you're unsatisfied at launch"<br>
+						<span class="font-normal">- Barroso Digital Design Contract §3.2</span></p>
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question8" class="accordionInput">
+					<label class="accordionLabel" for="question8">
+					  <span class="accordionText">8. “I’m not tech-savvy – can I manage the site?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>Absolutely! We provide easy-to-use training videos and documentation. Want us to handle everything? Our maintenance plans include content updates, security checks, and backups.</p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question9" class="accordionInput">
+					<label class="accordionLabel" for="question9">
+					  <span class="accordionText">9. “Will my site work on mobile devices?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>Every site we build is <strong>mobile-first responsive</strong> and tested across devices. Google prioritizes mobile-friendly sites – we ensure yours looks perfect on smartphones, tablets, and desktops.</p>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question10" class="accordionInput">
+					<label class="accordionLabel" for="question10">
+					  <span class="accordionText">10. “Do you handle SEO and speed optimization?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>Yes! Starter Plus Plan and above include:<br>
+					  ✓ Core Web Vitals optimization<br>
+					  ✓ Mobile responsiveness<br>
+					  ✓ SEO-friendly markup<br>
+					  ✓ XML sitemap setup (Bespoke Plan and above)<br>
+					  Add-on: Full SEO audits and keyword strategy available.</p>
+					  <span>*Starter Plan includes basic copy and Mobile responsiveness*</span>
+					</div>
+				  </div>
+				  
+				  <div class="accordion-item text-black">
+					<input type="checkbox" name="faqAccordion" id="question11" class="accordionInput">
+					<label class="accordionLabel" for="question11">
+					  <span class="accordionText">11. “How do we get started?”</span>
+					  <span class="accordionIcon"></span>
+					</label>
+					<div class="accordionContent">
+					  <p>1. <a href="#contactMe" class="text-custom hover:underline">Book a free 15-minute consult</a><br>
+					  2. Receive custom proposal within 24hrs<br>
+					  3. Approve design & launch in weeks!<br>
+					  No pressure – just honest advice about your online potential.</p>
+					</div>
+				  </div>
+			</div>
+		</section>
+
+		<section id="gallery" class="py-5 vw-100 bg-grey">
+			<h2 class="display-3 text-center">Gallery</h2>
+			<div class="galleryGrid row g-4 px-2 w-100 m-auto justify-content-center">
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://buttereatery.netlify.app/" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/buttereatery.gif" alt="Butter Eatery Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://cakesbyg.netlify.app/" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/cakesbyg.gif" alt="cakes by G Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://courierwebsite.netlify.app" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/courierwebsite.gif" alt="Courier Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://danielbarroso.netlify.app" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/danielbarroso.gif" alt="Daniel Barroso Portfolio Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://dannybhomes.casa" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/dannybhomes.gif" alt="Danny B Homes Realtor Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://lashessalon.netlify.app" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/lashessalon.gif" alt="Template Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://plumberplus.netlify.app" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/plumberplus.gif" alt="Plumber Template Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://starterplan.netlify.app" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/starterplan.gif" alt="Starter Plan Template Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://starterplusplan.netlify.app" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/starterplusplan.gif" alt="Starter Plus Template Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://swiftsigningfl.com" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/swiftsigningfl.gif" alt="Swift Signing Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="gallery-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
+					  	<a href="https://tattooplus.netlify.app" target="_blank">
+							<div class="ratio ratio-16x9">
+								<img src="/gifFolder/tattooplus.gif" alt="Tattoo Template Website" loading="lazy">
+							</div>
+					  	</a>
+					</div>
+				</div>
+
+			</div>
 		</section>
 
 
@@ -407,9 +582,9 @@
 				
 		</section>			 -->
 
-		<section id="advertisement">
-			<div class="title">
-				<h2>📢 Join Our Growing Network of Local Businesses!</h2>
+		<!-- <section id="advertisement" class="bg-black w-100 py-5">
+			<div class="title text-center">
+				<h2 class="display-4">📢 Join Our Growing Network of Local Businesses!</h2>
 				<p>Discover the businesses that trust Barroso Digital Designs to power their local marketing success! Our EDDM postcard mailer campaign connects local businesses with new customers—boosting visibility and driving growth.</p>
 			</div>
 			<div class="cardContainer">
@@ -453,55 +628,57 @@
 			<div class="closing">
 				<span>💼 Want to be featured here? Join other satisfied businesses leveraging custom websites & direct mail marketing to expand their reach. Let's build something amazing together!</span>
 			</div>
-			<ul id="nextPageIcons">
-				<li><a href="#contactMe" id="downArrow" class="fa fa-arrow-down"></a></li>
-				<li><a href="#home" id="faHome" class="fa fa-home"></a></li>
-			</ul>
 
-		</section>
+		</section> -->
 
 		<!-- contact me -->
-		<section id="contactMe" class="main style2 special">
-			<div class="container">
-				<div class="major">
-                    <h2>Ready to Elevate Your Online Presence?</h2>
+		<section id="contactMe" class="my-5 w-100 bg-frost">
+			<div class="d-flex flex-column justify-content-center align-items-center text-center px-5">
+				<h2 class="display-4">Ready to Elevate Your Online Presence?</h2>
+				<p style="max-width: 900px;">Get in touch through your preferred communication method, or schedule a free 30-minute consultation directly on our calendar to discuss your web design project. We're here to help you take your online presence to the next level.</p>
+				<div class="d-flex gap-5 ms-lg-4">
+					<a href="mailto:dannybhomes@gmail.com" class="text-custom navIcon">
+						<i class="fa-solid fa-envelope fa-3x"></i>
+					</a>
+					<a href="sms:+17868739593" class="text-custom navIcon">
+						<i class="fa-solid fa-comment fa-3x"></i>
+					</a>
+					<a href="tel:+17868739593" class="text-custom navIcon">
+						<i class="fa-solid fa-phone fa-3x"></i>
+					</a>
 				</div>
-				<p>Get in touch through your preferred communication method, or schedule a free 30-minute consultation directly on our calendar to discuss your web design project. We're here to help you take your online presence to the next level.</p>
-
-				<div class="contactLinks">
-					<div class="contactGrid">
-						<ul class="actions special contactContainer">
-							<li><i class="fa fa-envelope fa-4x faIcon"></i><a href="mailto:danny.develops@gmail.com" target="_blank" rel="noopener" class="button wide buttons">email</a></li>
-							<li><i class="fa fa-mobile fa-4x faIcon"></i><a href="tel:7868739593" target="_blank" rel="noopener" class="button wide buttons">call</a></li>
-							<li><i class="fa fa-comments fa-4x faIcon"></i><a href="sms:7868739593" target="_blank" rel="noopener" class="button wide buttons">text</a></li>
-						</ul>
-					</div>
-					<div class="calendar">
-						<!-- Calendly inline widget begin --> 
-						 <a id="calendly" href="https://calendly.com/dannydevelops82/consultation?primary_color=67d9c5" target="_blank" rel="noopener"><span>Book Now!</span></a>
-						 <div class="calendly-inline-widget" data-url="https://calendly.com/dannydevelops82/consultation?primary_color=67d9c5" target="_blank" rel="noopener"></div> 
-						 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" target="_blank" rel="noopener" async></script> <!-- Calendly inline widget end -->
-					</div>
-				</div>
+				<div class="calendar px-2">
+					<!-- Calendly inline widget begin --> 
+					<a id="calendly" href="https://calendly.com/dannydevelops82/consultation?primary_color=67d9c5" target="_blank" rel="noopener"><span>Book Now!</span></a>
+					<div class="calendly-inline-widget" data-url="https://calendly.com/dannydevelops82/consultation?primary_color=67d9c5"></div> 
+					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+					<!-- Calendly inline widget end -->
+				  </div>
+				  
 			</div>
-			<ul class="actions special">
-				<li><a href="#home" id="faHome" class="fa fa-home"></a></li>
-			</ul>
 		</section>
 
 			
 		<!-- Footer -->
-		<section id="footer">
-			<a href="https://x.com/dannydevelops82" target="_blank" rel="noopener" class="fa-brands fa-x-twitter fa-2x"><span class="label"></span></a>
-			<a href="https://www.linkedin.com/in/daniel-barroso82/" target="_blank" rel="noopener" class="fa-brands fa-linkedin fa-2x"><span class="label"></span></a>
-			<a href="https://www.instagram.com/danny.develops" target="_blank" rel="noopener" class="fa-brands fa-square-instagram fa-2x"><span class="label"></span></a>
-			<a href="https://github.com/barroso2223" target="_blank" rel="noopener" class="fa-brands fa-square-github fa-2x"><span class="label"></span></a>
-			<ul class="copyright">
-				<li>copyright&copy; 2024 Barroso Digital Design, All rights reserved. The trademarks and trade names used herein are the property of their respective owners.</li>
-			</ul> 
+		<section id="footer" class="bg-black p-3 gap-5 px-5">
+			<div class="d-flex justify-content-between footerContainer">
+				<div class="d-flex gap-3">
+					<a href="https://x.com/dannydevelops82" target="_blank" rel="noopener" class="fa-brands text-custom fa-x-twitter fa-2x"><span class="label"></span></a>
+					<a href="https://www.linkedin.com/in/daniel-barroso82/" target="_blank" rel="noopener" class="fa-brands text-custom fa-linkedin fa-2x"><span class="label"></span></a>
+					<a href="https://www.instagram.com/danny.develops" target="_blank" rel="noopener" class="fa-brands text-custom fa-square-instagram fa-2x"><span class="label"></span></a>
+					<a href="https://github.com/barroso2223" target="_blank" rel="noopener" class="fa-brands text-custom fa-square-github fa-2x"><span class="label"></span></a>
+				</div>
+				<div class="copyright">
+					<span>copyright&copy; 2024 Barroso Digital Design, All rights reserved. The trademarks and trade names used herein are the property of their respective owners.</span>
+				</div>
+			</div>
+			 
 		</section>
 
 		<script src="/main.js"></script>
+		<!-- Bootstrap JS and Popper.js -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 	</body>
 </html>
 		
